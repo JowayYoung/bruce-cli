@@ -1,7 +1,7 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React应用自动化构建脚手架-f66.svg">
 
 <a><img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg"></a>
-<a><img src="https://img.shields.io/badge/version-0.0.1-f66.svg"></a>
+<a><img src="https://img.shields.io/badge/version-0.0.2-f66.svg"></a>
 <a><img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg"></a>
 <a><img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg"></a>
 <a><img src="https://img.shields.io/badge/coverage-92%25-09f.svg"></a>
@@ -166,7 +166,9 @@ module.exports = {
 
 > 覆盖配置
 
-如果不需要默认配置或想自定义配置，直接覆盖配置属性即可
+- 如果想自定义配置，在根目录下创建`brucerc.js`，直接覆盖配置属性即可
+- 目前只提供`.js`的形式编写文件，可参考以下配置编写
+- 因为本项目使用`CommonJS规范`来开发，所以必须使用`module.exports = { ... };`导出这些配置属性
 
 ```js
 module.exports = {
@@ -268,6 +270,7 @@ module.exports = {
 	- 项目类型为SPA时，入口文件必须为`src/index.js|ts|jsx|tsx`
 	- 项目类型为MPA时，入口文件必须为`src/pages/pageName/index.js|ts|jsx|tsx`
 	- 当`src/pages`目录存在且包含子文件夹，则自动识别为`MPA项目`
+	- 默认样式编译使用`Sass`，如需使用`Less`把样式文件后缀名修改成`.less`
 - 垫片相关
 	- 如无特殊兼容入口文件无需增加`import "@babel/polyfill";`
 	- 如需兼容低版本浏览器，在入口文件最顶部加入`import "@babel/polyfill";`

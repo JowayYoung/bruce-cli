@@ -1,6 +1,6 @@
 {
 	"name": "bruce-cli",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "a react application automation build scaffold",
 	"keywords": [
 		"bruce-cli",
@@ -10,6 +10,7 @@
 		"webpack",
 		"postcss",
 		"sass",
+		"less",
 		"babel",
 		"typescript",
 		"stylelint",
