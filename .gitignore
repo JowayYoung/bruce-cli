@@ -1,5 +1,5 @@
 .DS_Store
-.gitattributes
+# .gitattributes
 dist
 node_modules
 package-lock.json
