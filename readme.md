@@ -236,18 +236,18 @@ module.exports = {
 
 ~|传统构建方案|本构建方案
 :-:|-|-
-构建<br>文件|`build文件夹` `config文件夹` `tools文件夹`<br>`.babelrc` `.eslintignore` `.eslintrc`<br>`.stylelintignore` `stylelintrc`|无
-业务<br>文件|`src文件夹`|`src文件夹`
-配置<br>文件|无(已集成在构建文件中)|`brucerc.js`
-基础<br>文件|`package.json` `readme.md`|`package.json` `readme.md`
-依赖<br>模块|`Webpack技术栈`(构建) `React技术栈`(业务)|`React技术栈`(业务)
-安装<br>时间|较慢(安装构建和业务代码依赖的模块)|较快(只安装业务代码依赖的模块)
-开发<br>准备|编写webpack和多种工具搭配的构建代码|开箱即用
-全局<br>使用|不可以|可以
-构建<br>复用|新建文件夹，复制粘贴构建代码，修改配置文件等|执行命令行初始项目和构建项目
-新手<br>构建|需了解构建代码逻辑和配置文件|执行命令行
-后期<br>扩展|在原有构建代码中进行增删改构建功能|通过配置文件`brucerc.js`进行增删改构建功能
-配置<br>管理|分散到不同的构建配置文件中|集成构建的基础配置，可通过配置文件`brucerc.js`进行覆盖
+构建文件|`build文件夹` `config文件夹` `tools文件夹`<br>`.babelrc` `.eslintignore` `.eslintrc`<br>`.stylelintignore` `stylelintrc`|无
+业务文件|`src文件夹`|`src文件夹`
+配置文件|无(已集成在构建文件中)|`brucerc.js`
+基础文件|`package.json` `readme.md`|`package.json` `readme.md`
+依赖模块|`Webpack技术栈`(构建) `React技术栈`(业务)|`React技术栈`(业务)
+安装时间|较慢<br>安装构建和业务代码依赖的模块|较快<br>只安装业务代码依赖的模块
+开发准备|编写webpack和多种工具搭配的构建代码|开箱即用
+全局使用|不可以|可以
+构建复用|新建文件夹，复制粘贴构建代码，修改配置文件等|执行命令行初始项目和构建项目
+新手构建|需了解构建代码逻辑和配置文件|执行命令行
+后期扩展|在原有构建代码中进行增删改构建功能|通过配置文件`brucerc.js`进行增删改构建功能
+配置管理|分散到不同的构建配置文件中|集成构建的基础配置<br>可通过配置文件`brucerc.js`进行覆盖
 
 ### 语言 <img src="https://img.shields.io/badge/Language-66f.svg">
 
