@@ -1,15 +1,15 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React应用自动化构建脚手架-f66.svg">
 
-<a><img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg"></a>
-<a><img src="https://img.shields.io/badge/version-0.0.1-f66.svg"></a>
-<a><img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/coverage-92%25-09f.svg"></a>
-<a><img src="https://img.shields.io/badge/size-595%20kb-09f.svg"></a>
-<a><img src="https://img.shields.io/badge/build-passing-f90.svg"></a>
-<a><img src="https://img.shields.io/badge/test-passing-f90.svg"></a>
-<a><img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20osx--64%20%7C%20linux--64-66f.svg"></a>
-<a><img src="https://img.shields.io/badge/license-MIT-66f.svg"></a>
+<span><img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg"></span>
+<span><img src="https://img.shields.io/badge/version-0.0.1-f66.svg"></span>
+<span><img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg"></span>
+<span><img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg"></span>
+<span><img src="https://img.shields.io/badge/coverage-92%25-09f.svg"></span>
+<span><img src="https://img.shields.io/badge/size-595%20kb-09f.svg"></span>
+<span><img src="https://img.shields.io/badge/build-passing-f90.svg"></span>
+<span><img src="https://img.shields.io/badge/test-passing-f90.svg"></span>
+<span><img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20osx--64%20%7C%20linux--64-66f.svg"></span>
+<span><img src="https://img.shields.io/badge/license-MIT-66f.svg"></span>
 
 ### 背景 <img src="https://img.shields.io/badge/Background-66f.svg">
 
@@ -302,4 +302,4 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 本项目源于我2017年3月份一个Angular项目里的构建代码，从最开始的`Webpack2`一直迭代到今天的`Webpack4`，话说`Webpack5`过段时间就要出了。最初我的构思是写一份构建代码模板存放在Github上，然后通过脚本把构建代码拉下来。可是这样构建代码和业务代码还是同时存放在一个文件夹里，不容易管理，文件又多又杂。下次新开项目时又要把构建代码复制过去，有时升级构建功能，为了保持构建功能的统一，需要同时修改几个项目里的构建代码，妈的真烦。既然这样，为什么不把那些通用的构建代码抽出来做成一个npm模块呢，这样一次安装全局运行，多爽呀！2018年3月我就开始对这个项目进行升级改造，做成一个npm模块，只不过一直在自己的电脑里跑。因为还没怎样应用到项目里，所以也不敢开源。经过差不多1年大大小小20多个项目的应用，终于稳定了这个项目的功能，所以我也决定对`bruce-cli`进行开源。对于所有通过`bruce-cli`创建的项目都可以开箱即用所有构建功能，如无特殊需求甚至是零配置即可运行项目。开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node服务端开发打下了巩固的基础。有付出就有收获，我还是一直相信这句话的，因为自己确实进步了很多。本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目发现Bug或者产生疑问，可以随时Issues或通过WeChat联系我。
 
-<center><img src="http://yangzw.vip/static/wechat.jpg" width="200"></center>
+<img src="http://yangzw.vip/static/wechat.jpg" width="200">
