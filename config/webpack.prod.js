@@ -1,0 +1,1 @@
+const e=require("webpack-merge"),{GetProdEntry:r}=require("./entry"),{GetProdOptimize:t}=require("./optimze"),{GetProdOutput:o}=require("./output"),u=require("./webpack.base");module.exports=function(i){return e(u(i),{devtool:3!==i.mode&&"source-map",entry:r(),mode:"production",optimization:t(i),output:o(i)})};

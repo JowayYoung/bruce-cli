@@ -1,0 +1,24 @@
+#import#
+import { hot } from "react-hot-loader";
+
+import "./assets/css/reset.scss";
+import "./index.scss";
+#logo#
+
+class App extends React.Component {
+	#render# {
+		return (
+			<div className="demo-page flex-ct">
+				<img src={ImgLogo} />
+				<h1>Hello React</h1>
+				<p>Edit src/demo.jsx and save to reload</p>
+				<p>Demo Page</p>
+			</div>
+		);
+	}
+}
+
+console.log("项目构建环境：", process.env.NODE_ENV);
+console.log("项目运行环境：", RUN_ENV); // #note#
+hot(module)(App);
+ReactDom.render(<App />, document.getElementById("root"));

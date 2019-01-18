@@ -1,0 +1,4 @@
+.demo-component {
+	font-size: 20px;
+	color: #f66;
+}

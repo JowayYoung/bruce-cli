@@ -1,0 +1,26 @@
+{
+	"extends": [
+		"tslint-config-standard",
+		"tslint:latest",
+		"tslint-react"
+	],
+	"defaultSeverity": "warning",
+	"linterOptions": {
+		"exclude": ["node_modules"]
+	},
+	"rules": {
+		"eofline": false,
+		"indent": [true, "tabs", 4],
+		"jsx-boolean-value": [true, "never"],
+		"max-classes-per-file": false,
+		"no-console": false,
+		"no-floating-promises": false,
+		"no-implicit-dependencies": [true, "optional", ["src"]],
+		"no-submodule-imports": false,
+		"no-var-requires": false,
+		"ordered-imports": false,
+		"prefer-object-spread": false,
+		"ter-indent": false,
+		"trailing-comma": false
+	}
+}

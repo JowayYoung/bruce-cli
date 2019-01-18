@@ -1,0 +1,6 @@
+.DS_Store
+.gitattributes
+dist
+node_modules
+package-lock.json
+yarn.lock

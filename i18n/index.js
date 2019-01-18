@@ -1,0 +1,1 @@
+const e=require("./zh-cht");module.exports=e;

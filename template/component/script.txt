@@ -1,0 +1,8 @@
+#import#
+import "./index.scss";
+
+export default class Demo extends React.Component#interface# {
+	#static##render# {
+		return <div className="demo-component">Demo Component#props#</div>;
+	}
+}
