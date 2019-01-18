@@ -1,15 +1,15 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React应用自动化构建脚手架-f66.svg">
 
-<span><img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg"></span>
-<span><img src="https://img.shields.io/badge/version-0.0.1-f66.svg"></span>
-<span><img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg"></span>
-<span><img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg"></span>
-<span><img src="https://img.shields.io/badge/coverage-92%25-09f.svg"></span>
-<span><img src="https://img.shields.io/badge/size-595%20kb-09f.svg"></span>
-<span><img src="https://img.shields.io/badge/build-passing-f90.svg"></span>
-<span><img src="https://img.shields.io/badge/test-passing-f90.svg"></span>
-<span><img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20osx--64%20%7C%20linux--64-66f.svg"></span>
-<span><img src="https://img.shields.io/badge/license-MIT-66f.svg"></span>
+<a><img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg"></a>
+<a><img src="https://img.shields.io/badge/version-0.0.1-f66.svg"></a>
+<a><img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/coverage-92%25-09f.svg"></a>
+<a><img src="https://img.shields.io/badge/size-595%20kb-09f.svg"></a>
+<a><img src="https://img.shields.io/badge/build-passing-f90.svg"></a>
+<a><img src="https://img.shields.io/badge/test-passing-f90.svg"></a>
+<a><img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20osx--64%20%7C%20linux--64-66f.svg"></a>
+<a><img src="https://img.shields.io/badge/license-MIT-66f.svg"></a>
 
 ### 背景 <img src="https://img.shields.io/badge/Background-66f.svg">
 
