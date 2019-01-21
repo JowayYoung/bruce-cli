@@ -313,4 +313,4 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目发现Bug或者产生疑问，可以随时Issues或通过WeChat联系我。
 
-<img src="http://yangzw.vip/static/wechat.jpg" width="200">
+<img src="http://yangzw.vip/static/wechat.jpg" style="display:block;margin:0 auto;width:200px">
