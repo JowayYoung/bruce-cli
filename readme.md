@@ -1,15 +1,15 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React应用自动化构建脚手架-f66.svg">
 
-<img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.0.3-f66.svg">
-<img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg">
-<img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg">
-<img src="https://img.shields.io/badge/size-600kb-09f.svg">
-<img src="https://img.shields.io/badge/coverage-100%25-09f.svg">
-<img src="https://img.shields.io/badge/build-passing-f90.svg">
-<img src="https://img.shields.io/badge/test-passing-f90.svg">
-<img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20osx--64%20%7C%20linux--64-66f.svg">
-<img src="https://img.shields.io/badge/license-MIT-66f.svg">
+<a><img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg"></a>
+<a><img src="https://img.shields.io/badge/version-0.0.3-f66.svg"></a>
+<a><img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/size-600kb-09f.svg"></a>
+<a><img src="https://img.shields.io/badge/coverage-100%25-09f.svg"></a>
+<a><img src="https://img.shields.io/badge/build-passing-f90.svg"></a>
+<a><img src="https://img.shields.io/badge/test-passing-f90.svg"></a>
+<a><img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20osx--64%20%7C%20linux--64-66f.svg"></a>
+<a><img src="https://img.shields.io/badge/license-MIT-66f.svg"></a>
 
 ### 🎥背景 <img src="https://img.shields.io/badge/Background-66f.svg">
 
@@ -19,18 +19,18 @@
 
 > 本项目是基于`Webpack4.x.x`进行开发的极速零配置开箱即用Web应用打包工具(**每次更新都会保持最新的依赖**)，集成各种常用工具(`Handlebars`、`Postcss`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Tslint`等)扩展构建功能，用于构建和管理React技术栈的项目应用
 
-<img src="https://img.shields.io/badge/commander-2.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/inquirer-6.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/webpack-4.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/handlebars-4.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/postcss-7.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/sass-7.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/less-3.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/stylelint-9.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/eslint-5.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg">
+<a><img src="https://img.shields.io/badge/commander-2.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/inquirer-6.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/webpack-4.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/handlebars-4.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/postcss-7.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/sass-7.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/less-3.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/stylelint-9.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/eslint-5.x.x-3c9.svg"></a>
+<a><img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg"></a>
 
 ### 📦安装 <img src="https://img.shields.io/badge/Installation-66f.svg">
 
