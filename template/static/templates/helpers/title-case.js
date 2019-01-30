@@ -1,0 +1,1 @@
+export default function(){return this.page.split("-").reduce((e,r)=>{return e+r.toLowerCase().replace(/( |^)[a-z]/g,e=>e.toUpperCase())},"")}
