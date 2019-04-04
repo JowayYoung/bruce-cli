@@ -1,15 +1,15 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React应用自动化构建脚手架-f66.svg">
 
-<a><img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg"></a>
-<a><img src="https://img.shields.io/badge/version-0.0.3-f66.svg"></a>
-<a><img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/size-600kb-09f.svg"></a>
-<a><img src="https://img.shields.io/badge/coverage-100%25-09f.svg"></a>
-<a><img src="https://img.shields.io/badge/build-passing-f90.svg"></a>
-<a><img src="https://img.shields.io/badge/test-passing-f90.svg"></a>
-<a><img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20osx--64%20%7C%20linux--64-66f.svg"></a>
-<a><img src="https://img.shields.io/badge/license-MIT-66f.svg"></a>
+<img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
+<img src="https://img.shields.io/badge/version-0.0.5-f66.svg">
+<img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg">
+<img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg">
+<img src="https://img.shields.io/badge/size-600kb-09f.svg">
+<img src="https://img.shields.io/badge/coverage-100%25-09f.svg">
+<img src="https://img.shields.io/badge/build-passing-f90.svg">
+<img src="https://img.shields.io/badge/test-passing-f90.svg">
+<img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20osx--64%20%7C%20linux--64-66f.svg">
+<img src="https://img.shields.io/badge/license-MIT-66f.svg">
 
 ### 🎥背景 <img src="https://img.shields.io/badge/Background-66f.svg">
 
@@ -19,18 +19,18 @@
 
 > 本项目是基于`Webpack4.x.x`进行开发的极速零配置开箱即用Web应用打包工具(**每次更新都会保持最新的依赖**)，集成各种常用工具(`Handlebars`、`Postcss`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Tslint`等)扩展构建功能，用于构建和管理React技术栈的项目应用
 
-<a><img src="https://img.shields.io/badge/commander-2.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/inquirer-6.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/webpack-4.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/handlebars-4.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/postcss-7.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/sass-7.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/less-3.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/stylelint-9.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/eslint-5.x.x-3c9.svg"></a>
-<a><img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg"></a>
+<img src="https://img.shields.io/badge/commander-2.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/inquirer-6.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/webpack-4.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/handlebars-4.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/postcss-7.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/sass-7.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/less-3.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/stylelint-9.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/eslint-5.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg">
 
 ### 📦安装 <img src="https://img.shields.io/badge/Installation-66f.svg">
 
@@ -47,23 +47,28 @@
 ~|命令|缩写
 -|-|-
 构建项目|**bruce build**|`bruce b`
+配置项目|**bruce config**|`bruce c`
 构建动态链接库|**bruce dll**|`bruce d`
 初始项目|**bruce init [name]**|`bruce i [name]`
 切换语言|**bruce lang**|`bruce l`
-创建组件|**bruce new [path] <--props>**|`bruce n [path] <-p>`
+创建组件|**bruce new <--opts> [path]**|`bruce n <-opts> [path]`
 删除依赖|**bruce remove**|`bruce r`
 
 > bruce init
 
 - **name**：项目名称(可选参数)
-- `[name]`为空时进入交互式问答初始项目(包含React相关配置)，用于开发React应用
-- `[name]`不为空时直接初始项目(不包含React相关配置)，用于开发原生JS应用或Jquery应用等
-- 使用`bruce i myProject`生成的项目以下统称为基础项目(不包含React相关配置)
+	- `[name]`为空时进入交互式问答初始项目(包含React相关配置)，用于开发React应用
+	- `[name]`不为空时直接初始项目(不包含React相关配置)，用于开发原生JS应用或Jquery应用等
+	- 使用`bruce i myProject`生成的项目以下统称为基础项目(不包含React相关配置)
 
 > bruce new
 
-- **path**：相对根目录的`src`文件夹下的路径，生成组件名为最后`/`后的名称
-- **props**：使用`prop-types`对组件进行参数校验(建议开启，规范代码)
+- **path**：组件路径(必选参数)
+	- 相对根目录的`src`文件夹下的路径
+	- 生成的组件名为最后`/`后的名称
+- **props**：参数校验(可选参数)
+	- 使用`prop-types`对组件进行参数校验(建议开启，规范代码)
+	- 以`--props`或`-p`的形式开启参数校验
 
 ### ☎️语言 <img src="https://img.shields.io/badge/Language-66f.svg">
 
@@ -76,6 +81,7 @@
 > 命令功能
 
 - [x] **构建项目**：根据终端交互式问答选择所需的配置进行项目调试和项目打包
+- [x] **配置项目**：根据终端交互式问答选择所需的配置生成县项目的配置文件
 - [x] **构建动态链接库**：构建项目前把第三方依赖单独提取出来，提高构建速度和减少构建过程中代码被重复编译的次数
 - [x] **初始项目**：根据终端交互式问答选择所需的配置生成项目的基本文件和入口文件
 - [x] **切换语言**：切换在终端面板中显示的文本语言，可选中文简体、中文繁体、英文
@@ -255,6 +261,7 @@ module.exports = {
 	- 默认显示语言为`中文简体`，如需切换`中文繁体`或`英文`请执行`bruce l`进行切换
 	- 目前只装备了React的构建配置，请勿用来构建Angular、Vue等其他MVVM项目
 	- 当前应用只能是React应用才能使用`bruce n`命令
+	- 配置文件的属性是`null`、`[]`、`{}`时，会使用内置配置默认值
 	- 请务必遵循构建错误提示进行修正，不要随意改动构建源代码，有可能导致项目构建进程无法运行
 - IDE相关
 	- 推荐使用[VSCode](https://code.visualstudio.com/)进行项目开发，以下配置也是基于`VSCode`进行
@@ -268,6 +275,7 @@ module.exports = {
 	- 应用类型为MPA时，入口文件必须为`src/pages/pageName/index.js|ts|jsx|tsx`
 	- 当`src/pages`目录存在且包含子文件夹，则自动识别为`MPA项目`
 	- 默认样式编译使用`Sass`，如需使用`Less`把样式文件后缀名修改成`.less`
+	- 使用`CSS精灵图`时，必须把图标统一放到`src/assets/img/icon`下，且文件格式为`png`
 	- 暴露出全局变量`RUN_ENV`用于获取当前运行环境，在使用`Eslint`或`Tslint`的情况下会报语法错误，在后面加上`eslint-disable-line`或`tslint:disable-line`即可
 		- `development`：开发环境
 		- `testing`：测试环境
@@ -332,18 +340,20 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 - 进入文件夹
 	> `cd projectList`
-- 创建项目
-	> `bruce i myProject`
-	> `bruce i` (根据交互式问答选择的选项来生成项目初始文件)
+- 初始项目
+	> `bruce i myProject` (直接生成项目初始文件)
+	> `bruce i` (根据交互式问答选择的选项生成项目React初始文件)
 - 进入项目根目录
 	> `cd myProject`
-- 构建动态链接库(根据交互式问答选择的选项来生成动态链接库)
+- 构建动态链接库(根据交互式问答选择的选项生成动态链接库)
 	> `bruce d`
-- 构建项目(根据交互式问答选择的选项来调试项目和打包项目)
+- 构建项目(根据交互式问答选择的选项调试项目和打包项目)
 	> `bruce b`
+- 配置项目
+	> `bruce c`
 - 创建组件
-	> `bruce c components/hello`
-	> `bruce c components/hello -p`
+	> `bruce n components/hello`
+	> `bruce n components/hello -p`
 - 删除依赖
 	> `bruce r`
 - 切换语言

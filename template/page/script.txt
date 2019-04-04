@@ -1,5 +1,5 @@
 #import#
-import { hot } from "react-hot-loader";
+import { hot } from "react-hot-loader/root";
 
 import "./assets/css/reset.scss";
 import "./index.scss";
@@ -20,5 +20,5 @@ class App extends React.Component {
 
 console.log("项目构建环境：", process.env.NODE_ENV);
 console.log("项目运行环境：", RUN_ENV); // #note#
-hot(module)(App);
+hot(App);
 ReactDom.render(<App />, document.getElementById("root"));
