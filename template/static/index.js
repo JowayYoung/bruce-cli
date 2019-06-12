@@ -1,1 +1,0 @@
-import"./assets/css/reset.scss";import"./index.scss";import s from"./assets/img/logo.svg";import o from"./templates/page.hbs";console.log("项目构建环境：",process.env.NODE_ENV),console.log("项目运行环境：",RUN_ENV),document.getElementById("root").innerHTML=o({logo:s,page:"index"});

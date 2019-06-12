@@ -1,1 +1,0 @@
-module.exports={alias:{},browserList:[],eslintIgnores:[],eslintRules:{},openPath:"",proxy:{},publicPathProd:"",publicPathTest:"",stylelintIgnores:[],stylelintRules:{},successCb:null,uploadOpts:null};

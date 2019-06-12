@@ -15,7 +15,7 @@
 		"max-classes-per-file": false,
 		"no-console": false,
 		"no-floating-promises": false,
-		"no-implicit-dependencies": [true, "optional", ["src"]],
+		"no-implicit-dependencies": false,
 		"no-submodule-imports": false,
 		"no-var-requires": false,
 		"ordered-imports": false,
