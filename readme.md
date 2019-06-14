@@ -1,7 +1,7 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
 <img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.1.0-f66.svg">
+<img src="https://img.shields.io/badge/version-0.1.1-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/size-652kb-09f.svg">
