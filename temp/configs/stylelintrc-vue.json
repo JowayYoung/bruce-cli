@@ -1,0 +1,29 @@
+{
+	"extends": "stylelint-config-standard",
+	"processors": "@mapbox/stylelint-processor-arbitrary-tags",
+	"rules": {
+		"at-rule-empty-line-before": "never",
+		"at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": [
+					"content",
+					"error",
+					"extend",
+					"if",
+					"include",
+					"mixin"
+				]
+			}
+		],
+		"color-hex-case": "lower",
+		"comment-empty-line-before": "never",
+		"declaration-empty-line-before": "never",
+		"indentation": "tab",
+		"no-descending-specificity": null,
+		"no-missing-end-of-source-newline": null,
+		"no-empty-source": null,
+		"number-leading-zero": "never",
+		"rule-empty-line-before": "never"
+	}
+}

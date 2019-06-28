@@ -1,10 +1,10 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
 <img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.1.1-f66.svg">
+<img src="https://img.shields.io/badge/version-0.2.0-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg">
-<img src="https://img.shields.io/badge/size-652kb-09f.svg">
+<img src="https://img.shields.io/badge/size-768kb-09f.svg">
 <img src="https://img.shields.io/badge/coverage-100%25-09f.svg">
 <img src="https://img.shields.io/badge/build-passing-f90.svg">
 <img src="https://img.shields.io/badge/test-passing-f90.svg">
@@ -26,13 +26,15 @@
 <img src="https://img.shields.io/badge/webpack-4.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/handlebars-4.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/postcss-7.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/sass-7.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/sass-1.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/less-3.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/stylelint-10.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/eslint-5.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/react-16.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/vue-2.x.x-3c9.svg">
 
 ### 📦安装 <img src="https://img.shields.io/badge/Installation-66f.svg">
 
@@ -74,7 +76,7 @@
 
 - [x] **模式选择**：提供`开发环境`、`测试环境`、`生产环境`三中模式，每种模式对应不同的构建配置和优化方案
 - [x] **端口监听**：使用开发模式时，启动本地服务器，并监听指定端口，可自动打开浏览器来访问页面
-- [x] **局部刷新**：启用Webpack内置的`HMR`，配合`react-hot-loader`，增量更新`css文件`和`js文件`，修哪更哪，无需刷新页面即可实时看见修改结果，并保存当前状态管理
+- [x] **局部刷新**：启用Webpack内置的`HMR`，配合`react-hot-loader`或`vue-loader`，增量更新`css文件`和`js文件`，修哪更哪，无需刷新页面即可实时看见修改结果，并保存当前状态管理
 - [x] **入口判断**：快速扫描项目中指定的入口文件路径，判断其是否存在，项目构建中入口文件作为根节点，必须得保证其存在和路径正确
 - [x] **垫片插入**：根据项目兼容性自动插入垫片，兼容低版本浏览器
 	- 插入动态`polyfill`，根据浏览器请求时的`UserAgent`返回垫片文件，`babel`编译JS代码时就不带上垫片进行编译，起到`减包作用`
@@ -87,7 +89,7 @@
 	- 使用`postcss-loader`处理CSS新特性和草案规范，根据`browserslist`增加CSS前缀
 	- 使用`sass-loader`处理Sass，通过`node-sass`编译`sass文件`为`css文件`
 	- 使用`less-loader`处理Less，通过`less`编译`less文件`为`css文件`
-	- 使用`babel-loader`根据预设环境和`browserslist`处理编写的`ES6代码`和`TS代码`，并生成浏览器可识别的`ES5代码`
+	- 使用`babel-loader`和`ts-loader`根据预设环境和`browserslist`分别处理编写的`ES6代码`和`TS代码`，并生成浏览器可识别的`ES5代码`
 - [x] **代码校验**：确保编写的语法没有错误，统一规范团队协作中每位同事的代码编写风格，减少代码冗余，在保证代码语法正确的前提下提高代码的可读性
 	- `CSS校验`：内置`stylelint`，配置标准的CSS语法规则，对开发过程中出现的语法错误进行检查和纠正
 	- `JS校验`：内置`eslint`和`tslint`，配置标准的JS和TS语法规则，对开发过程中出现的语法错误进行检查和纠正
@@ -280,6 +282,7 @@ module.exports = {
 - 项目只能单独存在JS或TS，JS项目下脚本文件只能是`.js`或`.jsx`，TS项目下脚本文件只能是`ts`或`tsx`
 - 应用类型为SPA时，入口文件必须为`src/index.js|ts|jsx|tsx`
 - 应用类型为MPA时，入口文件必须为`src/pages/pageName/index.js|ts|jsx|tsx`
+- Vue项目下导入`vue文件`时，后缀名`.vue`不能省略，否则会报错
 - 当`src/pages`目录存在且包含子文件夹，则自动识别为`MPA项目`
 - 使用`CSS精灵图`时，必须把图标统一放到`src/assets/icon`下，且文件格式为`png`
 - 暴露出全局变量`RUN_ENV`用于获取当前运行环境，在使用`Eslint`或`Tslint`的情况下会报语法错误，在后面加上`eslint-disable-line`或`tslint:disable-line`即可
@@ -320,12 +323,12 @@ module.exports = {
 > 传统构建方案
 
 基于`Gulp`和`Webpack`构建的`React项目`，项目代码分为**构建代码**和**业务代码**，项目目录和文件配置是比较传统和多人使用的项目搭建方案。整个项目中除去业务代码后，构建代码的文件比较多，配置比较分散，比较难集中管理，无法做到开箱即用，通用性比较低，前期搭建项目构建方案可能花费的时间比较多，项目构建时需依赖本项目存在的依赖模块才能驱动。对于增删改构建功能和新同事入门，可能需要花比较多的时间去查找代码和熟悉构建逻辑
-<br><img src="http://yangzw.vip/static/complex.png">
+![complex.png](https://yangzw.vip/static/complex.png)
 
 > 本构建方案
 
 基于`Webpack`构建的`React项目`，代码只有**业务代码**，构建代码集中在一起做成一个npm模块并安装到全局环境中，通过命令调用本方案来驱动此项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大节省项目前期准备时间，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建准备，直接开箱即用，使开发者集中精力写好业务代码
-<br><img src="http://yangzw.vip/static/simple.png">
+![simple.png](https://yangzw.vip/static/simple.png)
 
 > 方案对比
 
@@ -375,12 +378,7 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 ### 📝待做 <img src="https://img.shields.io/badge/Todo-f90.svg">
 
-- [ ] 增加`Vue`的构建配置
 - [ ] 增加`bruce eject`命令，用于开发者自定义`bruce-cli`的配置
-
-```!
-文档中虽然有提及Vue，但是目前还没完全集成进去本项目中，故Vue相关的构建无法使用，待后续更新
-```
 
 ### ⏳后记 <img src="https://img.shields.io/badge/Postscript-f66.svg">
 
@@ -394,4 +392,4 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli)或通过WeChat联系我。使用时记得查看文档哟，详情请[戳这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个Star。
 
-<img src="https://yangzw.vip/static/wechat.jpg" style="display:block;margin:0 auto;width:200px">
+![wechat.jpg](https://yangzw.vip/static/wechat.jpg)

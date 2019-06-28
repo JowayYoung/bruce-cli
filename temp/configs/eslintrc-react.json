@@ -1,0 +1,88 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"standard",
+		"plugin:react/recommended"
+	],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 10,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"html",
+		"react"
+	],
+	"root": true,
+	"rules": {
+		"eol-last": [
+			"error",
+			"never"
+		],
+		"handle-callback-err": [
+			"error",
+			"error"
+		],
+		"indent": [
+			"error",
+			"tab"
+		],
+		"jsx-quotes": [
+			"error",
+			"prefer-double"
+		],
+		"no-console": [
+			"off"
+		],
+		"no-new": [
+			"off"
+		],
+		"no-tabs": [
+			"off"
+		],
+		"no-unreachable": [
+			"off"
+		],
+		"object-curly-spacing": [
+			"error",
+			"always"
+		],
+		"operator-linebreak": [
+			"error",
+			"before"
+		],
+		"quotes": [
+			"error",
+			"double"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"sort-keys": [
+			"error",
+			"asc",
+			{
+				"caseSensitive": false,
+				"natural": true
+			}
+		],
+		"space-before-function-paren": [
+			"error",
+			"never"
+		]
+	},
+	"settings": {
+		"react": {
+			"version": "16"
+		}
+	}
+}

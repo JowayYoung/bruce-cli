@@ -1,0 +1,74 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"standard"
+	],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 10,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"html"
+	],
+	"root": true,
+	"rules": {
+		"eol-last": [
+			"error",
+			"never"
+		],
+		"handle-callback-err": [
+			"error",
+			"error"
+		],
+		"indent": [
+			"error",
+			"tab"
+		],
+		"no-console": [
+			"off"
+		],
+		"no-new": [
+			"off"
+		],
+		"no-tabs": [
+			"off"
+		],
+		"no-unreachable": [
+			"off"
+		],
+		"object-curly-spacing": [
+			"error",
+			"always"
+		],
+		"operator-linebreak": [
+			"error",
+			"before"
+		],
+		"quotes": [
+			"error",
+			"double"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"sort-keys": [
+			"error",
+			"asc",
+			{
+				"caseSensitive": false,
+				"natural": true
+			}
+		],
+		"space-before-function-paren": [
+			"error",
+			"never"
+		]
+	}
+}

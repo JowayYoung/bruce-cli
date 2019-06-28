@@ -1,4 +1,16 @@
-.index-page {
+<template>
+	<div class="demo-page flex-ct">
+		<h1>
+			<span class="gradient">bruce-cli</span>
+			<img src="./assets/img/logo.svg" />
+		</h1>
+		<p>How to configure this <strong class="vue">Vue</strong> project</p>
+		<p>Check out the `<a href="https://github.com/JowayYoung/bruce-cli" class="gradient">bruce-cli docs</a>`</p>
+	</div>
+</template>
+
+<style lang="scss">
+.demo-page {
 	overflow: hidden;
 	flex-direction: column;
 	height: 100vh;
@@ -83,3 +95,13 @@
 		transform: rotate(0);
 	}
 }
+</style>
+
+#imports#
+export default {
+	#name#mounted() {
+		console.log("项目构建环境：", process.env.NODE_ENV);
+		console.log("项目运行环境：", RUN_ENV); // note
+	}
+};
+</script>
