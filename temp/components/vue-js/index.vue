@@ -9,6 +9,14 @@
 }
 </style>
 
-#imports#
-export default #exports#
+<script>
+export default {
+	name: "demo",
+	props: {
+		done: {
+			default: "Done",
+			type: String
+		}
+	}
+};
 </script>

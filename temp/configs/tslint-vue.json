@@ -1,0 +1,24 @@
+{
+	"extends": [
+		"tslint-config-standard"
+	],
+	"defaultSeverity": "error",
+	"linterOptions": {
+		"exclude": ["node_modules"]
+	},
+	"rules": {
+		"eofline": false,
+		"indent": [true, "tabs", 4],
+		"max-classes-per-file": false,
+		"max-line-length": false,
+		"no-console": false,
+		"no-floating-promises": false,
+		"no-implicit-dependencies": false,
+		"no-submodule-imports": false,
+		"no-var-requires": false,
+		"ordered-imports": false,
+		"prefer-object-spread": false,
+		"strict-type-predicates": false,
+		"trailing-comma": false
+	}
+}

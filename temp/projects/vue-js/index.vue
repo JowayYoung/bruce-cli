@@ -97,11 +97,6 @@
 }
 </style>
 
-#imports#
-export default {
-	#name#mounted() {
-		console.log("项目构建环境：", process.env.NODE_ENV);
-		console.log("项目运行环境：", RUN_ENV); // note
-	}
-};
+<script>
+export default {};
 </script>

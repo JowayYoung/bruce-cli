@@ -4,8 +4,9 @@ import { hot } from "react-hot-loader/root";
 
 import "./assets/css/reset.css";
 import "./index.scss";
-#imports#
+import ImgLogo from "./assets/img/logo.svg";
 
+@hot
 class App extends Component {
 	render() {
 		return (
@@ -22,6 +23,5 @@ class App extends Component {
 }
 
 console.log("项目构建环境：", process.env.NODE_ENV);
-console.log("项目运行环境：", RUN_ENV); // note
-hot(App);
+console.log("项目运行环境：", RUN_ENV); // eslint-disable-line
 ReactDom.render(<App />, document.getElementById("root"));

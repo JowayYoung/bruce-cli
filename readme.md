@@ -1,17 +1,17 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
 <img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.0-f66.svg">
+<img src="https://img.shields.io/badge/version-0.2.1-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg">
-<img src="https://img.shields.io/badge/size-768kb-09f.svg">
+<img src="https://img.shields.io/badge/size-732kb-09f.svg">
 <img src="https://img.shields.io/badge/coverage-100%25-09f.svg">
-<img src="https://img.shields.io/badge/build-passing-f90.svg">
 <img src="https://img.shields.io/badge/test-passing-f90.svg">
-<img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20osx--64%20%7C%20linux--64-66f.svg">
+<img src="https://img.shields.io/badge/build-passing-f90.svg">
+<img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20mac--64%20%7C%20linux--64-66f.svg">
 <img src="https://img.shields.io/badge/license-MIT-66f.svg">
 
-> `bruce-cli`是一个React/Vue应用自动化构建脚手架，其零配置开箱即用的优点非常适合入门级、初中级、快速开发项目的前端同学使用，还可通过创建`brucerc.js`文件来覆盖其默认配置，只需专注业务代码的编写无需关注构建代码的编写，让项目结构更简洁。详情[请戳这里](https://github.com/JowayYoung/bruce-cli)，使用时记得查看文档哟，喜欢的可以给个Star
+> `bruce-cli`是一个**React/Vue**应用自动化构建脚手架，其零配置开箱即用的优点非常适合入门级、初中级、快速开发项目的前端同学使用，还可通过创建`brucerc.js`文件来覆盖其默认配置，只需专注业务代码的编写无需关注构建代码的编写，让项目结构更简洁。详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，使用时记得查看文档哟，喜欢的可以给个Star
 
 ### 🎥背景 <img src="https://img.shields.io/badge/Background-66f.svg">
 
@@ -21,8 +21,8 @@
 
 > 本项目是基于`Webpack4.x.x`进行开发的极速零配置开箱即用的Web应用打包工具(**每次更新都会保持最新的依赖**)，集成各种常用工具(`Handlebars`、`Postcss`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Tslint`等)扩展构建功能，用于构建和管理**React/Vue**技术栈的项目应用
 
-<img src="https://img.shields.io/badge/commander-2.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/inquirer-6.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/commander-2.x.x-f90.svg">
+<img src="https://img.shields.io/badge/inquirer-6.x.x-f90.svg">
 <img src="https://img.shields.io/badge/webpack-4.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/handlebars-4.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/postcss-7.x.x-3c9.svg">
@@ -31,10 +31,10 @@
 <img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/stylelint-10.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/eslint-5.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/eslint-6.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/react-16.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/vue-2.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/react-16.x.x-09f.svg">
+<img src="https://img.shields.io/badge/vue-2.x.x-09f.svg">
 
 ### 📦安装 <img src="https://img.shields.io/badge/Installation-66f.svg">
 
@@ -44,7 +44,7 @@
 > 安装失败
 
 - 将npm源镜像设置为淘宝镜像：`npm config set registry https://registry.npm.taobao.org/`
-- 重新执行命令安装：`npm i -g bruce-cli` 或 `yarn add bruce-cli`
+- 重新执行命令安装：`npm i -g bruce-cli` 或 `yarn add global bruce-cli`
 
 ### 💻使用 <img src="https://img.shields.io/badge/Usage-66f.svg">
 
@@ -296,8 +296,8 @@ module.exports = {
 > 垫片相关
 
 - `@babel/polyfill`在`7.4.0`后被弃用，因此本项目使用的垫片为`core-js`和`regenerator-runtime`
-- 如无特殊兼容，入口文件最顶处无需增加`import "core-js";`和`import "regenerator-runtime";`
-- 如需兼容低版本浏览器，在入口文件最顶处加入`import "core-js";`和`import "regenerator-runtime";`(`core-js`版本必须为`2.x.y`)
+- 如无特殊兼容，入口文件最顶处无需增加`import "core-js/stable";`和`import "regenerator-runtime/runtime";`
+- 如需兼容低版本浏览器，在入口文件最顶处加入`import "core-js/stable";`和`import "regenerator-runtime/runtime";`(`core-js`版本必须为`2.x.y`)
 
 > TS相关
 
@@ -323,18 +323,18 @@ module.exports = {
 > 传统构建方案
 
 基于`Gulp`和`Webpack`构建的`React项目`，项目代码分为**构建代码**和**业务代码**，项目目录和文件配置是比较传统和多人使用的项目搭建方案。整个项目中除去业务代码后，构建代码的文件比较多，配置比较分散，比较难集中管理，无法做到开箱即用，通用性比较低，前期搭建项目构建方案可能花费的时间比较多，项目构建时需依赖本项目存在的依赖模块才能驱动。对于增删改构建功能和新同事入门，可能需要花比较多的时间去查找代码和熟悉构建逻辑
-![complex.png](https://yangzw.vip/static/complex.png)
+![project-c.png](https://yangzw.vip/static/project-c.png)
 
 > 本构建方案
 
 基于`Webpack`构建的`React项目`，代码只有**业务代码**，构建代码集中在一起做成一个npm模块并安装到全局环境中，通过命令调用本方案来驱动此项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大节省项目前期准备时间，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建准备，直接开箱即用，使开发者集中精力写好业务代码
-![simple.png](https://yangzw.vip/static/simple.png)
+![project-s.png](https://yangzw.vip/static/project-s.png)
 
 > 方案对比
 
 ~|传统构建方案|本构建方案
 :-:|-|-
-构建文件|`build文件夹` `config文件夹` `tools文件夹`<br>`.babelrc` `.eslintignore` `.eslintrc`<br>`.stylelintignore` `stylelintrc`|无
+构建文件|`build文件夹` `config文件夹` `tools文件夹`<br>`.browserslistrc`<br>`.postcssrc` `.babelrc`<br>`.stylelintignore` `.stylelintrc`<br>`.eslintignore` `.eslintrc`|无
 业务文件|`src文件夹`|`src文件夹`
 配置文件|无(已集成在构建文件中)|`brucerc.js`
 基础文件|`package.json` `readme.md`|`package.json` `readme.md`
@@ -351,9 +351,9 @@ module.exports = {
 
 MIT © [Joway Young](https://github.com/JowayYoung)
 
-本项目由本人独自开发，经过2年多的时间沉淀出来，过程中进行了大量的项目测试和应用，目前上线的项目多达20多个，足可以支撑本项目的可行性和稳定性
+本项目由本人独自开发，经过2年多的时间沉淀出来，过程中进行了大量的项目测试和应用，目前上线的项目多达20多个，足可以支撑本项目的可行性和稳定性。
 
-由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli)或通过WeChat联系我(推荐，下方有二维码)，我会立马反馈和修复相关Bug
+由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli)或通过WeChat联系我(推荐，下方有二维码)，我会立马反馈和修复相关Bug。
 
 ### 🔨示例 <img src="https://img.shields.io/badge/Example-09f.svg">
 
@@ -390,6 +390,6 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node服务端开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。
 
-本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli)或通过WeChat联系我。使用时记得查看文档哟，详情请[戳这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个Star。
+本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli/issues)或通过WeChat联系我。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个Star。
 
-![wechat.jpg](https://yangzw.vip/static/wechat.jpg)
+![wechat-me.jpg](https://yangzw.vip/static/wechat-me.jpg)

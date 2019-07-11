@@ -39,6 +39,10 @@
 			"error",
 			"prefer-double"
 		],
+		"lines-between-class-members": [
+			"error",
+			"never"
+		],
 		"no-console": [
 			"off"
 		],

@@ -4,7 +4,7 @@
 		"tslint:latest",
 		"tslint-react"
 	],
-	"defaultSeverity": "warning",
+	"defaultSeverity": "error",
 	"linterOptions": {
 		"exclude": ["node_modules"]
 	},
@@ -12,7 +12,9 @@
 		"eofline": false,
 		"indent": [true, "tabs", 4],
 		"jsx-boolean-value": [true, "never"],
+		"jsx-no-lambda": false,
 		"max-classes-per-file": false,
+		"max-line-length": false,
 		"no-console": false,
 		"no-floating-promises": false,
 		"no-implicit-dependencies": false,
@@ -20,6 +22,7 @@
 		"no-var-requires": false,
 		"ordered-imports": false,
 		"prefer-object-spread": false,
+		"strict-type-predicates": false,
 		"ter-indent": false,
 		"trailing-comma": false
 	}
