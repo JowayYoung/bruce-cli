@@ -1,5 +1,5 @@
 <template>
-	<div class="demo-page flex-ct">
+	<div class="demo-page flex-ct-x">
 		<h1>
 			<span class="gradient">bruce-cli</span>
 			<img src="./assets/img/logo.svg" />

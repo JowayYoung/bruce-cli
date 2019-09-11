@@ -125,7 +125,7 @@ xmp {
 	padding: 0;
 }
 body {
-	font: 14px/1 "Microsoft YaHei", serif;
+	font: 14px/1 "PingFang SC", "Microsoft YaHei", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -228,8 +228,14 @@ a:active {
 	transform: translateY(-50%);
 }
 /* 弹性布局 */
-.flex-ct {
+.flex-ct-x {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-ct-y {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -240,15 +246,6 @@ a:active {
 	align-content: space-between;
 }
 /* 动画模式 */
-.tran-fast {
-	transition: all .3ms;
-}
-.tran-medi {
-	transition: all .5ms;
-}
-.tran-slow {
-	transition: all .8ms;
-}
 .td-camera {
 	perspective: 1000;
 }

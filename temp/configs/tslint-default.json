@@ -15,6 +15,7 @@
 		"no-floating-promises": false,
 		"no-implicit-dependencies": false,
 		"no-submodule-imports": false,
+		"no-unused-expression": false,
 		"no-var-requires": false,
 		"ordered-imports": false,
 		"prefer-object-spread": false,

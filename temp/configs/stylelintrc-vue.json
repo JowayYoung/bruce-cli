@@ -18,6 +18,7 @@
 		],
 		"color-hex-case": "lower",
 		"comment-empty-line-before": "never",
+		"declaration-colon-newline-after": null,
 		"declaration-empty-line-before": "never",
 		"indentation": "tab",
 		"no-descending-specificity": null,

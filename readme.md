@@ -1,10 +1,10 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
 <img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.1-f66.svg">
+<img src="https://img.shields.io/badge/version-0.2.2-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg">
-<img src="https://img.shields.io/badge/size-732kb-09f.svg">
+<img src="https://img.shields.io/badge/size-730kb-09f.svg">
 <img src="https://img.shields.io/badge/coverage-100%25-09f.svg">
 <img src="https://img.shields.io/badge/test-passing-f90.svg">
 <img src="https://img.shields.io/badge/build-passing-f90.svg">
@@ -21,8 +21,8 @@
 
 > 本项目是基于`Webpack4.x.x`进行开发的极速零配置开箱即用的Web应用打包工具(**每次更新都会保持最新的依赖**)，集成各种常用工具(`Handlebars`、`Postcss`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Tslint`等)扩展构建功能，用于构建和管理**React/Vue**技术栈的项目应用
 
-<img src="https://img.shields.io/badge/commander-2.x.x-f90.svg">
-<img src="https://img.shields.io/badge/inquirer-6.x.x-f90.svg">
+<img src="https://img.shields.io/badge/commander-3.x.x-f90.svg">
+<img src="https://img.shields.io/badge/inquirer-7.x.x-f90.svg">
 <img src="https://img.shields.io/badge/webpack-4.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/handlebars-4.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/postcss-7.x.x-3c9.svg">
@@ -323,12 +323,12 @@ module.exports = {
 > 传统构建方案
 
 基于`Gulp`和`Webpack`构建的`React项目`，项目代码分为**构建代码**和**业务代码**，项目目录和文件配置是比较传统和多人使用的项目搭建方案。整个项目中除去业务代码后，构建代码的文件比较多，配置比较分散，比较难集中管理，无法做到开箱即用，通用性比较低，前期搭建项目构建方案可能花费的时间比较多，项目构建时需依赖本项目存在的依赖模块才能驱动。对于增删改构建功能和新同事入门，可能需要花比较多的时间去查找代码和熟悉构建逻辑
-![project-c.png](https://yangzw.vip/static/project-c.png)
+![project-c.png](https://yangzw.vip/static/img/project-c.png)
 
 > 本构建方案
 
 基于`Webpack`构建的`React项目`，代码只有**业务代码**，构建代码集中在一起做成一个npm模块并安装到全局环境中，通过命令调用本方案来驱动此项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大节省项目前期准备时间，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建准备，直接开箱即用，使开发者集中精力写好业务代码
-![project-s.png](https://yangzw.vip/static/project-s.png)
+![project-s.png](https://yangzw.vip/static/img/project-s.png)
 
 > 方案对比
 
@@ -392,4 +392,4 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli/issues)或通过WeChat联系我。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个Star。
 
-![wechat-me.jpg](https://yangzw.vip/static/wechat-me.jpg)
+![wechat-me.jpg](https://yangzw.vip/static/img/wechat-me.jpg)

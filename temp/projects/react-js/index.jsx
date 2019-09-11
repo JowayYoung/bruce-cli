@@ -10,7 +10,7 @@ import ImgLogo from "./assets/img/logo.svg";
 class App extends Component {
 	render() {
 		return (
-			<div className="demo-page flex-ct">
+			<div className="demo-page flex-ct-x">
 				<h1>
 					<span className="gradient">bruce-cli</span>
 					<img src={ImgLogo} />
