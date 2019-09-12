@@ -1,7 +1,7 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
 <img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.2-f66.svg">
+<img src="https://img.shields.io/badge/version-0.2.3-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/size-730kb-09f.svg">
@@ -158,20 +158,8 @@ module.exports = {
 	errorCb: null,
 	eslintIgnores: [],
 	eslintRules: {
-		"eol-last": ["error", "never"],
-		"handle-callback-err": ["error", "error"],
-		"indent": ["error", "tab"],
-		"jsx-quotes": ["error", "prefer-double"],
-		"no-console": ["off"],
-		"no-new": ["off"],
-		"no-tabs": ["off"],
-		"no-unreachable": ["off"],
-		"object-curly-spacing": ["error", "always"],
-		"operator-linebreak": ["error", "before"],
-		"quotes": ["error", "double"],
-		"semi": ["error", "always"],
-		"sort-keys": ["error", "asc", { "caseSensitive": false, "natural": true }],
-		"space-before-function-paren": ["error", "never"]
+		// eslint规则配置
+		// 查看bruce-cli模块下的temp/configs/eslintrc-{default/react/vue}.json
 	},
 	frame: "default",
 	openPath: "",
@@ -181,16 +169,8 @@ module.exports = {
 	style: "scss",
 	stylelintIgnores: [],
 	stylelintRules: {
-		"at-rule-empty-line-before": "never",
-		"at-rule-no-unknown": [true, { "ignoreAtRules": ["content", "extend", "include", "mixin"] }],
-		"color-hex-case": "lower",
-		"comment-empty-line-before": "never",
-		"declaration-empty-line-before": "never",
-		"indentation": "tab",
-		"no-descending-specificity": null,
-		"no-missing-end-of-source-newline": null,
-		"number-leading-zero": "never",
-		"rule-empty-line-before": "never"
+		// stylelint规则配置
+		// 查看bruce-cli模块下的temp/configs/stylelintrc-{default/react/vue}.json
 	},
 	successCb: null,
 	uploadOpts: null,

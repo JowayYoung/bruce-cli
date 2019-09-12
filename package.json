@@ -1,6 +1,6 @@
 {
 	"name": "bruce-cli",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"description": "A React/Vue application automation build scaffold with zero configuration out of the box",
 	"keywords": [
 		"bruce-cli",
