@@ -1,10 +1,10 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
 <img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.3-f66.svg">
-<img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-3c9.svg">
-<img src="https://img.shields.io/badge/npm-%3E%3D%205.0.0-3c9.svg">
-<img src="https://img.shields.io/badge/size-730kb-09f.svg">
+<img src="https://img.shields.io/badge/version-0.2.4-f66.svg">
+<img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg">
+<img src="https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg">
+<img src="https://img.shields.io/badge/size-732kb-09f.svg">
 <img src="https://img.shields.io/badge/coverage-100%25-09f.svg">
 <img src="https://img.shields.io/badge/test-passing-f90.svg">
 <img src="https://img.shields.io/badge/build-passing-f90.svg">
@@ -30,7 +30,7 @@
 <img src="https://img.shields.io/badge/less-3.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/stylelint-10.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/stylelint-11.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/eslint-6.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/react-16.x.x-09f.svg">
@@ -139,42 +139,44 @@
 		- `path`：目标文件路径
 		- `privateKey`：秘钥(不可与`password`共存)
 		- `username`：账号
+- **useAssetsRelPath**：使用资源相对路径
 - **useTs**：集成TypeScript
 
 > 默认配置
 
 ```js
 module.exports = {
-	alias: {},
-	browserList: [
-		"last 20 Chrome versions",
-		"last 20 Firefox versions",
-		"last 20 Opera versions",
-		"Explorer >= 11",
-		"Safari >= 8",
-		"Android >= 4.4",
-		"iOS >= 8"
-	],
-	errorCb: null,
-	eslintIgnores: [],
-	eslintRules: {
-		// eslint规则配置
-		// 查看bruce-cli模块下的temp/configs/eslintrc-{default/react/vue}.json
-	},
-	frame: "default",
-	openPath: "",
-	proxy: {},
-	publicPathProd: "",
-	publicPathTest: "",
-	style: "scss",
-	stylelintIgnores: [],
-	stylelintRules: {
-		// stylelint规则配置
-		// 查看bruce-cli模块下的temp/configs/stylelintrc-{default/react/vue}.json
-	},
-	successCb: null,
-	uploadOpts: null,
-	useTs: false
+    alias: {},
+    browserList: [
+        "last 20 Chrome versions",
+        "last 20 Firefox versions",
+        "last 20 Opera versions",
+        "Explorer >= 11",
+        "Safari >= 8",
+        "Android >= 4.4",
+        "iOS >= 8"
+    ],
+    errorCb: null,
+    eslintIgnores: [],
+    eslintRules: {
+        // eslint规则配置
+        // 查看bruce-cli模块下的temp/configs/eslintrc-{default/react/vue}.json
+    },
+    frame: "default",
+    openPath: "",
+    proxy: {},
+    publicPathProd: "",
+    publicPathTest: "",
+    style: "scss",
+    stylelintIgnores: [],
+    stylelintRules: {
+        // stylelint规则配置
+        // 查看bruce-cli模块下的temp/configs/stylelintrc-{default/react/vue}.json
+    },
+    successCb: null,
+    uploadOpts: null,
+    useAssetsRelPath: false,
+    useTs: false
 };
 ```
 
@@ -186,56 +188,57 @@ module.exports = {
 
 ```js
 module.exports = {
-	alias: {
-		swiper: "swiper/dist/js/swiper.js"
-	},
-	browserList: [
-		"> 0.5%",
-		"last 2 versions"
-	],
-	errorCb(err) {
-		console.log("错误信息", err);
-	}
-	eslintIgnores: [
-		"src/components/*"
-	],
-	eslintRules: {
-		"space-before-function-paren": ["error", "always"]
-	},
-	frame: "react",
-	openPath: "?abc=123",
-	proxy: [{
-		changeOrigin: true,
-		context: [
-			"/cain/article/detail",
-			"/cain/vote/result",
-			"/cain/vote/post"
-		],
-		secure: false,
-		target: "https://cain-dev.gameyw.netease.com"
-	}],
-	publicPathProd: "https://www.baidu.com",
-	publicPathTest: "https://www.baidu.com",
-	style: "less",
-	stylelintIgnores: [
-		"src/assets/css/*"
-	],
-	stylelintRules: {
-		"color-hex-case": "upper"
-	},
-	successCb(mode, dir) {
-		console.log("运行环境", mode);
-		console.log("输出路径", dir);
-	},
-	uploadOpts(mode) {
-		return {
-			host: "your server ip",
-			password: "your server password",
-			path: "/root/www",
-			username: "root"
-		};
-	},
-	useTs: true
+    alias: {
+        swiper: "swiper/dist/js/swiper.js"
+    },
+    browserList: [
+        "> 0.5%",
+        "last 2 versions"
+    ],
+    errorCb(err) {
+        console.log("错误信息", err);
+    }
+    eslintIgnores: [
+        "src/components/*"
+    ],
+    eslintRules: {
+        "space-before-function-paren": ["error", "always"]
+    },
+    frame: "react",
+    openPath: "?abc=123",
+    proxy: [{
+        changeOrigin: true,
+        context: [
+            "/login",
+            "/list",
+            "/detail"
+        ],
+        secure: false,
+        target: "https://www.baidu.com"
+    }],
+    publicPathProd: "https://www.baidu.com",
+    publicPathTest: "https://www.baidu.com",
+    style: "less",
+    stylelintIgnores: [
+        "src/assets/css/*"
+    ],
+    stylelintRules: {
+        "color-hex-case": "upper"
+    },
+    successCb(mode, dir) {
+        console.log("运行环境", mode);
+        console.log("输出路径", dir);
+    },
+    uploadOpts(mode) {
+        return {
+            host: "your server ip",
+            password: "your server password",
+            path: "/root/www",
+            username: "root"
+        };
+    },
+    useAssetsRelPath: true,
+    useTs: true
 };
 ```
 
