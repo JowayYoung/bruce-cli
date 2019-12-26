@@ -1,10 +1,10 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
 <img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.4-f66.svg">
+<img src="https://img.shields.io/badge/version-0.2.5-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg">
-<img src="https://img.shields.io/badge/size-732kb-09f.svg">
+<img src="https://img.shields.io/badge/size-690kb-09f.svg">
 <img src="https://img.shields.io/badge/coverage-100%25-09f.svg">
 <img src="https://img.shields.io/badge/test-passing-f90.svg">
 <img src="https://img.shields.io/badge/build-passing-f90.svg">
@@ -21,16 +21,16 @@
 
 > 本项目是基于`Webpack4.x.x`进行开发的极速零配置开箱即用的Web应用打包工具(**每次更新都会保持最新的依赖**)，集成各种常用工具(`Handlebars`、`Postcss`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Tslint`等)扩展构建功能，用于构建和管理**React/Vue**技术栈的项目应用
 
-<img src="https://img.shields.io/badge/commander-3.x.x-f90.svg">
+<img src="https://img.shields.io/badge/commander-4.x.x-f90.svg">
 <img src="https://img.shields.io/badge/inquirer-7.x.x-f90.svg">
-<img src="https://img.shields.io/badge/webpack-4.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/webpack-4.x.x-f66.svg">
 <img src="https://img.shields.io/badge/handlebars-4.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/postcss-7.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/sass-1.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/less-3.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/stylelint-11.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/stylelint-12.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/eslint-6.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/react-16.x.x-09f.svg">
@@ -74,7 +74,7 @@
 
 > 内置功能
 
-- [x] **模式选择**：提供`开发环境`、`测试环境`、`生产环境`三中模式，每种模式对应不同的构建配置和优化方案
+- [x] **模式选择**：提供`开发环境`、`测试环境`、`生产环境`三种模式，每种模式对应不同的构建配置和优化方案
 - [x] **端口监听**：使用开发模式时，启动本地服务器，并监听指定端口，可自动打开浏览器来访问页面
 - [x] **局部刷新**：启用Webpack内置的`HMR`，配合`react-hot-loader`或`vue-loader`，增量更新`css文件`和`js文件`，修哪更哪，无需刷新页面即可实时看见修改结果，并保存当前状态管理
 - [x] **入口判断**：快速扫描项目中指定的入口文件路径，判断其是否存在，项目构建中入口文件作为根节点，必须得保证其存在和路径正确
@@ -83,13 +83,13 @@
 	- 插入静态`polyfill`，根据`browserslist`和编写代码中的ES6语法自动插入所需的垫片代码
 - [x] **动态导入**：可使用动态导入的语法(`import().then()`)，处理代码时会单独分离此模块，执行页面对应操作时才加载此模块，使用才加载不使用则不加载(`代码懒加载`)，减少首屏加载代码大小和渲染时间
 - [x] **代码编译**：内置CSS编译器(`Postcss`、`Sass`、`Less`)和JS编译器(`Babel`、`TypeScript`)编译样式和脚本，开发时可使用最新或草案规范中的语法，使得代码更简洁，提高代码的可读性
-	- 使用`raw-loader`处理和TXT，把文件内容以字符串的形式导入
+	- 使用`raw-loader`处理TXT，把文件内容以字符串的形式导入
 	- 使用`handlebars-loader`处理内联HTML和HBS，把HTML元素以内联的形式插入页面当中
 	- 使用`style-loader`和`css-loader`处理CSS，把CSS从JS中单独抽离出来
 	- 使用`postcss-loader`处理CSS新特性和草案规范，根据`browserslist`增加CSS前缀
 	- 使用`sass-loader`处理Sass，通过`node-sass`编译`sass文件`为`css文件`
 	- 使用`less-loader`处理Less，通过`less`编译`less文件`为`css文件`
-	- 使用`babel-loader`和`ts-loader`根据预设环境和`browserslist`分别处理编写的`ES6代码`和`TS代码`，并生成浏览器可识别的`ES5代码`
+	- 使用`babel-loader`根据预设环境和`browserslist`处理编写的`ES6代码`和`TS代码`，并生成浏览器可识别的`ES5代码`
 - [x] **代码校验**：确保编写的语法没有错误，统一规范团队协作中每位同事的代码编写风格，减少代码冗余，在保证代码语法正确的前提下提高代码的可读性
 	- `CSS校验`：内置`stylelint`，配置标准的CSS语法规则，对开发过程中出现的语法错误进行检查和纠正
 	- `JS校验`：内置`eslint`和`tslint`，配置标准的JS和TS语法规则，对开发过程中出现的语法错误进行检查和纠正
@@ -101,8 +101,8 @@
 	- `JS压缩`：内置`uglifyjs`和`terser`，对抽离出来的JS进行压缩去重，`uglifyjs`用于压缩`ES5`，`terser`用于压缩`ES6`
 	- `图片压缩`：内置`imagemin`，对`png`、`jpg`等图像进行无损压缩
 - [x] **接口代理**：使用`proxy`反向代理服务端接口，解决接口跨域问题
-- [x] **资源处理**：使用`file-loader`和`url-loader`来处理字体、图像、音频、视频资源
-- [x] **摇树优化**：启用Webpack内置的`Tree Shaking`，禁止`babel`把代码转换成`Commonjs规范`，使用`ESM规范`的静态声明特点来去除不被引用或不被执行的代码块，起到`减包作用`
+- [x] **资源处理**：使用`file-loader`和`url-loader`来处理字体、图像、音频、视频等媒体资源，图像小于10k时转换为`base64形式`
+- [x] **摇树优化**：启用Webpack内置的`Tree Shaking`，禁止`babel`把代码转换成`CommonJS规范`，使用`ESM规范`的静态声明特点来去除不被引用或不被执行的代码块，起到`减包作用`
 - [x] **缓存优化**：在开启文件哈希化后，根据文件哈希值是否发生变化来执行打包操作，哈希没有变化的文件直接从缓存中获取，减少打包生成文件的时间
 - [x] **文件哈希**：可对生成文件设置哈希值，只有文件内容修改了才会更改哈希值，用于长缓存优化
 - [x] **文件缓存**：第一次构建速度可能慢一些，构建完成后会生成本地缓存文件，可提高后续再次构建的速度
@@ -111,7 +111,7 @@
 - [x] **文件上传**：暴露出构建成功的钩子，可在钩子函数上编写上传到服务器的代码用于打包后将文件上传到服务器，还可进行其他操作
 - [x] **配置定制**：当部分配置不符合项目需求时，可通过项目根目录下的配置文件`brucerc.js`来修改默认配置，构建启动时就会使用此配置文件来覆盖默认构建配置
 
-### ⚙️配置 <img src="https://img.shields.io/badge/Config-66f.svg">
+### ⚙️配置 <img src="https://img.shields.io/badge/Configuration-66f.svg">
 
 - **alias**：模块导入快捷方式，配置详情请参考[webpack resolve alias](https://webpack.js.org/configuration/resolve/#resolve-alias)
 - **browserList**：目标浏览器配置列表，配置详情请参考[browserslist](https://github.com/browserslist/browserslist)
@@ -151,7 +151,7 @@ module.exports = {
         "last 20 Chrome versions",
         "last 20 Firefox versions",
         "last 20 Opera versions",
-        "Explorer >= 11",
+        "Explorer >= 10",
         "Safari >= 8",
         "Android >= 4.4",
         "iOS >= 8"
@@ -265,7 +265,6 @@ module.exports = {
 - 项目只能单独存在JS或TS，JS项目下脚本文件只能是`.js`或`.jsx`，TS项目下脚本文件只能是`ts`或`tsx`
 - 应用类型为SPA时，入口文件必须为`src/index.js|ts|jsx|tsx`
 - 应用类型为MPA时，入口文件必须为`src/pages/pageName/index.js|ts|jsx|tsx`
-- Vue项目下导入`vue文件`时，后缀名`.vue`不能省略，否则会报错
 - 当`src/pages`目录存在且包含子文件夹，则自动识别为`MPA项目`
 - 使用`CSS精灵图`时，必须把图标统一放到`src/assets/icon`下，且文件格式为`png`
 - 暴露出全局变量`RUN_ENV`用于获取当前运行环境，在使用`Eslint`或`Tslint`的情况下会报语法错误，在后面加上`eslint-disable-line`或`tslint:disable-line`即可
@@ -298,7 +297,7 @@ module.exports = {
 - 公共模板需放置`src/templates/partials`目录下，在模板内使用`{{fileName param}}`进行引用
 - 公共函数和公共模板的用法和例子请参考[handlebars-loader](https://github.com/pcardune/handlebars-loader)
 
-### ⚖️对比 <img src="https://img.shields.io/badge/Compare-66f.svg">
+### ⚖️对比 <img src="https://img.shields.io/badge/Contrast-66f.svg">
 
 - 传统构建方案
 - 本构建方案
@@ -306,12 +305,12 @@ module.exports = {
 > 传统构建方案
 
 基于`Gulp`和`Webpack`构建的`React项目`，项目代码分为**构建代码**和**业务代码**，项目目录和文件配置是比较传统和多人使用的项目搭建方案。整个项目中除去业务代码后，构建代码的文件比较多，配置比较分散，比较难集中管理，无法做到开箱即用，通用性比较低，前期搭建项目构建方案可能花费的时间比较多，项目构建时需依赖本项目存在的依赖模块才能驱动。对于增删改构建功能和新同事入门，可能需要花比较多的时间去查找代码和熟悉构建逻辑
-![project-c.png](https://yangzw.vip/static/img/project-c.png)
+![传统构建方案目录](https://yangzw.vip/static/article/bruce-cli/project-c.png)
 
 > 本构建方案
 
-基于`Webpack`构建的`React项目`，代码只有**业务代码**，构建代码集中在一起做成一个npm模块并安装到全局环境中，通过命令调用本方案来驱动此项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大节省项目前期准备时间，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建准备，直接开箱即用，使开发者集中精力写好业务代码
-![project-s.png](https://yangzw.vip/static/img/project-s.png)
+基于`Webpack`构建的`React项目`，代码只有**业务代码**，构建代码集中在一起做成一个`npm模块`并安装到全局环境中，通过命令调用本方案来驱动需要开发的项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大节省项目前期准备时间，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建准备，直接开箱即用，使开发者集中精力写好业务代码
+![本构建方案目录](https://yangzw.vip/static/article/bruce-cli/project-s.png)
 
 > 方案对比
 
@@ -322,8 +321,8 @@ module.exports = {
 配置文件|无(已集成在构建文件中)|`brucerc.js`
 基础文件|`package.json` `readme.md`|`package.json` `readme.md`
 依赖模块|`Webpack技术栈`(构建) `React技术栈`(业务)|`React技术栈`(业务)
-安装时间|较慢<br>安装构建和业务代码依赖的模块|较快<br>只安装业务代码依赖的模块
-开发准备|编写webpack和多种工具搭配的构建代码|开箱即用
+安装时间|较慢<br>安装构建和业务代码依赖的模块<br>每次开发都需安装一次|较快<br>只安装业务代码依赖的模块<br>全局安装一次即可
+开发准备|编写`webpack`和多种工具搭配的构建代码|开箱即用
 全局使用|不可以|可以
 构建复用|新建文件夹，复制粘贴构建代码，修改配置文件等|执行命令行初始项目和构建项目
 新手构建|需了解构建代码逻辑和配置文件|执行命令行
@@ -336,12 +335,12 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 本项目由本人独自开发，经过2年多的时间沉淀出来，过程中进行了大量的项目测试和应用，目前上线的项目多达20多个，足可以支撑本项目的可行性和稳定性。
 
-由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli)或通过WeChat联系我(推荐，下方有二维码)，我会立马反馈和修复相关Bug。
+由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli)或通过**WeChat**联系我(推荐，下方有二维码)，我会立马反馈和修复相关Bug。
 
 ### 🔨示例 <img src="https://img.shields.io/badge/Example-09f.svg">
 
 - 查看帮助
-	> `bruce` 或 `bruce -h`
+	> `bruce -h`
 - 查看版本
 	> `bruce -v`
 - 切换语言
@@ -361,7 +360,7 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 ### 📝待做 <img src="https://img.shields.io/badge/Todo-f90.svg">
 
-- [ ] 增加`bruce eject`命令，用于开发者自定义`bruce-cli`的配置
+- [ ] 增加Vue项目下使用Tslint校验vue文件
 
 ### ⏳后记 <img src="https://img.shields.io/badge/Postscript-f66.svg">
 
@@ -373,6 +372,6 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node服务端开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。
 
-本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli/issues)或通过WeChat联系我。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个Star。
+本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli/issues)或通过**WeChat**联系我。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个Star。
 
-![wechat-me.jpg](https://yangzw.vip/static/img/wechat-me.jpg)
+![个人二维码](https://yangzw.vip/static/article/wechat/wechat-me.jpg)

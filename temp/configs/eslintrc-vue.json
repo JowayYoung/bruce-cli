@@ -9,6 +9,7 @@
 		"standard",
 		"plugin:vue/recommended"
 	],
+	"parser": "vue-eslint-parser",
 	"parserOptions": {
 		"ecmaVersion": 10,
 		"parser": "babel-eslint",
