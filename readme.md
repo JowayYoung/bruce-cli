@@ -1,10 +1,10 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
 <img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.5-f66.svg">
+<img src="https://img.shields.io/badge/version-0.2.6-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg">
-<img src="https://img.shields.io/badge/size-690kb-09f.svg">
+<img src="https://img.shields.io/badge/size-180kb-09f.svg">
 <img src="https://img.shields.io/badge/coverage-100%25-09f.svg">
 <img src="https://img.shields.io/badge/test-passing-f90.svg">
 <img src="https://img.shields.io/badge/build-passing-f90.svg">
@@ -175,7 +175,7 @@ module.exports = {
     },
     successCb: null,
     uploadOpts: null,
-    useAssetsRelPath: false,
+    useAssetsRelPath: true,
     useTs: false
 };
 ```
@@ -237,7 +237,7 @@ module.exports = {
             username: "root"
         };
     },
-    useAssetsRelPath: true,
+    useAssetsRelPath: false,
     useTs: true
 };
 ```
