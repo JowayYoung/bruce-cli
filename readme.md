@@ -1,7 +1,7 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
-<img src="https://img.shields.io/badge/author-Joway%20Young-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.6-f66.svg">
+<img src="https://img.shields.io/badge/author-JowayYoung-f66.svg">
+<img src="https://img.shields.io/badge/version-0.2.7-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg">
 <img src="https://img.shields.io/badge/size-180kb-09f.svg">
@@ -30,7 +30,7 @@
 <img src="https://img.shields.io/badge/less-3.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/stylelint-12.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/stylelint-13.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/eslint-6.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/react-16.x.x-09f.svg">
@@ -43,7 +43,7 @@
 
 > 安装失败
 
-- 将npm源镜像设置为淘宝镜像：`npm config set registry https://registry.npm.taobao.org/`
+- 将npm源镜像设置为淘宝镜像：`npm config set registry https://registry.npm.taobao.org`
 - 重新执行命令安装：`npm i -g bruce-cli` 或 `yarn add global bruce-cli`
 
 ### 💻使用 <img src="https://img.shields.io/badge/Usage-66f.svg">
@@ -120,6 +120,7 @@
 - **eslintIgnores**：Eslint忽略路径列表，配置详情请参考[eslint ignores](https://eslint.org/docs/user-guide/configuring#using-eslintignore-in-packagejson)
 - **eslintRules**：Eslint校验规则列表，配置详情请参考[eslint rules](https://eslint.org/docs/user-guide/configuring#configuring-rules)和[rules](https://eslint.org/docs/rules/)
 - **frame**：开发框架(`default`表示普通应用，`react`表示React应用，`vue`表示Vue应用)
+- **includeModules**：编译模块白名单列表(`node_modules/xxx`)，默认是不对`node_modules`进行编译
 - **openPath**：开发环境下浏览器打开后显示URL路径
 - **proxy**：接口代理，配置详情请参考[webpack-dev-server proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy)
 - **publicPathProd**：生产环境公共路径
@@ -163,6 +164,7 @@ module.exports = {
         // 查看bruce-cli模块下的temp/configs/eslintrc-{default/react/vue}.json
     },
     frame: "default",
+    includeModules: [],
     openPath: "",
     proxy: {},
     publicPathProd: "",
@@ -205,6 +207,10 @@ module.exports = {
         "space-before-function-paren": ["error", "always"]
     },
     frame: "react",
+    includeModules: [
+        "lodash",
+        "trample"
+    ],
     openPath: "?abc=123",
     proxy: [{
         changeOrigin: true,
@@ -335,7 +341,7 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 本项目由本人独自开发，经过2年多的时间沉淀出来，过程中进行了大量的项目测试和应用，目前上线的项目多达20多个，足可以支撑本项目的可行性和稳定性。
 
-由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli)或通过**WeChat**联系我(推荐，下方有二维码)，我会立马反馈和修复相关Bug。
+由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可以随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议，我会立马反馈和修复相关Bug。
 
 ### 🔨示例 <img src="https://img.shields.io/badge/Example-09f.svg">
 
@@ -372,6 +378,8 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node服务端开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。
 
-本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时[Issues](https://github.com/JowayYoung/bruce-cli/issues)或通过**WeChat**联系我。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个Star。
+本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个[Star](https://github.com/JowayYoung/bruce-cli)。
 
-![个人二维码](https://yangzw.vip/static/article/wechat/wechat-me.jpg)
+**关注公众号`IQ前端`，更多前端小干货等着你喔！我是`JowayYoung`，喜欢分享前端技术和生活纪事，学习与生活不落下，每天进步一点点，与大家相伴成长**
+
+![](https://yangzw.vip/static/frontend/account/IQ前端公众号.jpg)

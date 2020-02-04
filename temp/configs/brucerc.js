@@ -6,6 +6,7 @@ module.exports = {
 	eslintIgnores: [], // Eslint忽略路径列表
 	eslintRules: {}, // Eslint校验规则列表
 	frame: "default", // 开发框架
+	includeModules: [], // 编译模块白名单列表(node_modules/xxx)
 	openPath: "", // 开发环境下浏览器打开后显示URL路径
 	proxy: {}, // 接口代理
 	publicPathProd: "", // 生产环境公共路径
