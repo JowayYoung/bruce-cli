@@ -3,6 +3,7 @@
 		"browser": true,
 		"commonjs": true,
 		"es6": true,
+		"jquery": true,
 		"node": true
 	},
 	"extends": [
@@ -49,7 +50,19 @@
 		"no-console": [
 			"off"
 		],
+		"no-extend-native": [
+			"off"
+		],
 		"no-new": [
+			"off"
+		],
+		"no-proto": [
+			"off"
+		],
+		"no-return-assign": [
+			"off"
+		],
+		"no-sequences": [
 			"off"
 		],
 		"no-tabs": [

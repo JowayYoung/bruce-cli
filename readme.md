@@ -1,11 +1,11 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
 <img src="https://img.shields.io/badge/author-JowayYoung-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.7-f66.svg">
+<img src="https://img.shields.io/badge/version-0.2.8-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg">
 <img src="https://img.shields.io/badge/size-180kb-09f.svg">
-<img src="https://img.shields.io/badge/coverage-100%25-09f.svg">
+<img src="https://img.shields.io/badge/coverage-80%25-09f.svg">
 <img src="https://img.shields.io/badge/test-passing-f90.svg">
 <img src="https://img.shields.io/badge/build-passing-f90.svg">
 <img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20mac--64%20%7C%20linux--64-66f.svg">
@@ -13,11 +13,11 @@
 
 > `bruce-cli`是一个**React/Vue**应用自动化构建脚手架，其零配置开箱即用的优点非常适合入门级、初中级、快速开发项目的前端同学使用，还可通过创建`brucerc.js`文件来覆盖其默认配置，只需专注业务代码的编写无需关注构建代码的编写，让项目结构更简洁。详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，使用时记得查看文档哟，喜欢的可以给个Star
 
-### 🎥背景 <img src="https://img.shields.io/badge/Background-66f.svg">
+### 🎥背景
 
 在前端技术的日益壮大下，从以前简单的几个文件到现在的一堆文件，各种扩展和工具植入到项目里，使得项目越来越庞大越来越难管理，前端项目也因此而趋于工程化和一体化。日新月异的前端技术已经让前端代码的业务逻辑和交互效果越来越复杂，项目会一直维护和迭代，令开发者更加不易于管理。模块化开发和各种框架把项目分成若干个小模块，增加了最后发布的困难，没有一个统一的标准，让前端项目结构千奇百怪。通常的项目都是团队开发，每个人的代码编写习惯和逻辑编写风格也很难一致。工作围绕着**开发效率**和**运行性能**的工程化问题是我们作为前端开发者必须得处理的问题。因此前端项目自动化构建在整个项目开发中越来越重要。
 
-### 🔗依赖 <img src="https://img.shields.io/badge/Dependence-66f.svg">
+### 🔗依赖
 
 > 本项目是基于`Webpack4.x.x`进行开发的极速零配置开箱即用的Web应用打包工具(**每次更新都会保持最新的依赖**)，集成各种常用工具(`Handlebars`、`Postcss`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Tslint`等)扩展构建功能，用于构建和管理**React/Vue**技术栈的项目应用
 
@@ -32,11 +32,11 @@
 <img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/stylelint-13.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/eslint-6.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/tslint-5.x.x-3c9.svg">
+<img src="https://img.shields.io/badge/tslint-6.x.x-3c9.svg">
 <img src="https://img.shields.io/badge/react-16.x.x-09f.svg">
 <img src="https://img.shields.io/badge/vue-2.x.x-09f.svg">
 
-### 📦安装 <img src="https://img.shields.io/badge/Installation-66f.svg">
+### 📦安装
 
 - `npm i -g bruce-cli`
 - `yarn global add bruce-cli`
@@ -44,9 +44,10 @@
 > 安装失败
 
 - 将npm源镜像设置为淘宝镜像：`npm config set registry https://registry.npm.taobao.org`
+- 将sass源镜像设置为淘宝镜像：`npm config set sass-binary-site https://npm.taobao.org/mirrors/node-sass`
 - 重新执行命令安装：`npm i -g bruce-cli` 或 `yarn add global bruce-cli`
 
-### 💻使用 <img src="https://img.shields.io/badge/Usage-66f.svg">
+### 💻使用
 
 ~|命令|缩写
 -|-|-
@@ -56,13 +57,13 @@
 创建组件|**bruce new**|`bruce n`
 删除依赖|**bruce remove**|`bruce r`
 
-### ☎️语言 <img src="https://img.shields.io/badge/Language-66f.svg">
+### ☎️语言
 
 - [x] zh-chs 简体中文 **<font color="#f66">默认</font>**
 - [x] zh-cht 繁體中文
 - [x] en English
 
-### 💡功能 <img src="https://img.shields.io/badge/Function-66f.svg">
+### 💡功能
 
 > 命令功能
 
@@ -99,7 +100,7 @@
 - [x] **压缩合并**：
 	- `CSS压缩`：内置`cssnano`，对抽离出来的CSS进行压缩去重
 	- `JS压缩`：内置`uglifyjs`和`terser`，对抽离出来的JS进行压缩去重，`uglifyjs`用于压缩`ES5`，`terser`用于压缩`ES6`
-	- `图片压缩`：内置`imagemin`，对`png`、`jpg`等图像进行无损压缩
+	- `图片压缩`：内置`imagemin`，对`jpg`、`png`等图像进行无损压缩
 - [x] **接口代理**：使用`proxy`反向代理服务端接口，解决接口跨域问题
 - [x] **资源处理**：使用`file-loader`和`url-loader`来处理字体、图像、音频、视频等媒体资源，图像小于10k时转换为`base64形式`
 - [x] **摇树优化**：启用Webpack内置的`Tree Shaking`，禁止`babel`把代码转换成`CommonJS规范`，使用`ESM规范`的静态声明特点来去除不被引用或不被执行的代码块，起到`减包作用`
@@ -111,7 +112,7 @@
 - [x] **文件上传**：暴露出构建成功的钩子，可在钩子函数上编写上传到服务器的代码用于打包后将文件上传到服务器，还可进行其他操作
 - [x] **配置定制**：当部分配置不符合项目需求时，可通过项目根目录下的配置文件`brucerc.js`来修改默认配置，构建启动时就会使用此配置文件来覆盖默认构建配置
 
-### ⚙️配置 <img src="https://img.shields.io/badge/Configuration-66f.svg">
+### ⚙️配置
 
 - **alias**：模块导入快捷方式，配置详情请参考[webpack resolve alias](https://webpack.js.org/configuration/resolve/#resolve-alias)
 - **browserList**：目标浏览器配置列表，配置详情请参考[browserslist](https://github.com/browserslist/browserslist)
@@ -248,7 +249,7 @@ module.exports = {
 };
 ```
 
-### 📋细节 <img src="https://img.shields.io/badge/Detail-66f.svg">
+### 📋细节
 
 > CLI相关
 
@@ -268,7 +269,7 @@ module.exports = {
 
 > 文件相关
 
-- 项目只能单独存在JS或TS，JS项目下脚本文件只能是`.js`或`.jsx`，TS项目下脚本文件只能是`ts`或`tsx`
+- 项目只能单独存在JS或TS，JS项目下脚本文件只能是`.js`或`.jsx`，TS项目下脚本文件只能是`.ts`或`.tsx`
 - 应用类型为SPA时，入口文件必须为`src/index.js|ts|jsx|tsx`
 - 应用类型为MPA时，入口文件必须为`src/pages/pageName/index.js|ts|jsx|tsx`
 - 当`src/pages`目录存在且包含子文件夹，则自动识别为`MPA项目`
@@ -303,7 +304,7 @@ module.exports = {
 - 公共模板需放置`src/templates/partials`目录下，在模板内使用`{{fileName param}}`进行引用
 - 公共函数和公共模板的用法和例子请参考[handlebars-loader](https://github.com/pcardune/handlebars-loader)
 
-### ⚖️对比 <img src="https://img.shields.io/badge/Contrast-66f.svg">
+### ⚖️对比
 
 - 传统构建方案
 - 本构建方案
@@ -311,11 +312,13 @@ module.exports = {
 > 传统构建方案
 
 基于`Gulp`和`Webpack`构建的`React项目`，项目代码分为**构建代码**和**业务代码**，项目目录和文件配置是比较传统和多人使用的项目搭建方案。整个项目中除去业务代码后，构建代码的文件比较多，配置比较分散，比较难集中管理，无法做到开箱即用，通用性比较低，前期搭建项目构建方案可能花费的时间比较多，项目构建时需依赖本项目存在的依赖模块才能驱动。对于增删改构建功能和新同事入门，可能需要花比较多的时间去查找代码和熟悉构建逻辑
+
 ![传统构建方案目录](https://yangzw.vip/static/article/bruce-cli/project-c.png)
 
 > 本构建方案
 
-基于`Webpack`构建的`React项目`，代码只有**业务代码**，构建代码集中在一起做成一个`npm模块`并安装到全局环境中，通过命令调用本方案来驱动需要开发的项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大节省项目前期准备时间，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建准备，直接开箱即用，使开发者集中精力写好业务代码
+基于本项目构建的`React项目`，代码只有**业务代码**，构建代码集中在一起做成一个`npm模块`并安装到全局环境中，通过命令调用本方案来驱动需要开发的项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大节省项目前期准备时间，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建准备，直接开箱即用，使开发者集中精力写好业务代码
+
 ![本构建方案目录](https://yangzw.vip/static/article/bruce-cli/project-s.png)
 
 > 方案对比
@@ -335,7 +338,7 @@ module.exports = {
 后期扩展|在原有构建代码中进行增删改构建功能|通过配置文件`brucerc.js`进行增删改构建功能
 配置管理|分散到不同的构建配置文件中|集成构建的基础配置<br>可通过配置文件`brucerc.js`进行覆盖
 
-### 🔖版权 <img src="https://img.shields.io/badge/License-66f.svg">
+### 🔖版权
 
 MIT © [Joway Young](https://github.com/JowayYoung)
 
@@ -343,32 +346,29 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可以随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议，我会立马反馈和修复相关Bug。
 
-### 🔨示例 <img src="https://img.shields.io/badge/Example-09f.svg">
+### 🔨示例
 
-- 查看帮助
-	> `bruce -h`
-- 查看版本
-	> `bruce -v`
-- 切换语言
-	> `bruce l`
-- 进入文件夹
-	> `cd projectList`
-- 初始项目
-	> `bruce i`
-- 进入项目根目录
-	> `cd myProject`
-- 构建项目
-	> `bruce b`
-- 创建组件(构建项目时需另起一个`cmd`窗口执行)
-	> `bruce n`
-- 删除依赖
-	> `bruce r`
+- 查看帮助：`bruce -h`
+- 查看版本：`bruce -v`
+- 切换语言：`bruce l`
+- 进入文件夹：`cd projectList`
+- 初始项目：`bruce i`
+- 进入项目根目录：`cd myProject`
+- 构建项目：`bruce b`
+- 创建组件(构建项目时需另起一个`cmd`窗口执行)：`bruce n`
+- 删除依赖：`bruce r`
 
-### 📝待做 <img src="https://img.shields.io/badge/Todo-f90.svg">
+### 📝待做
 
+- [ ] 修复Vue项目下无法校验vue文件外的CSS
 - [ ] 增加Vue项目下使用Tslint校验vue文件
+- [ ] 由于Tslint的性能问题，后续所有Tslint功能改由Eslint代替(这是一个大工程，估计得花2周时间重构现有的Lint配置)
 
-### ⏳后记 <img src="https://img.shields.io/badge/Postscript-f66.svg">
+```!
+TypeScript的Tslint功能暂时不要使用，存在一些问题待修复
+```
+
+### ⏳后记
 
 本项目源于我2017年3月份一个Angular项目里的构建代码，从最开始的`Webpack2`一直迭代到今天的`Webpack4`，话说`Webpack5`过段时间就要出了。
 
@@ -376,7 +376,7 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 2018年3月我就开始对这个项目进行升级改造，做成一个npm模块，只不过一直在自己的电脑里跑。因为还没怎样应用到项目里，所以也不敢开源。经过差不多1年大大小小20多个项目的应用，终于稳定了这个项目的功能，所以我也决定对`bruce-cli`进行开源。对于所有通过`bruce-cli`创建的项目都可以开箱即用所有构建功能，如无特殊需求甚至是零配置即可运行项目。
 
-开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node服务端开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。
+开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node服务端开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。截止2020年，已成功运用在自己所负责的项目达到40多个，再加上一些同行朋友和一些小公司也有使用本项目。
 
 本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个[Star](https://github.com/JowayYoung/bruce-cli)。
 
