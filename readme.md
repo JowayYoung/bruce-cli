@@ -1,17 +1,15 @@
-# Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
+# Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-66f.svg">
 
-<!-- <img src="https://img.shields.io/badge/author-JowayYoung-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.9-f66.svg">
-<img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg">
-<img src="https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg">
-<img src="https://img.shields.io/badge/test-passing-f90.svg">
-<img src="https://img.shields.io/badge/build-passing-f90.svg">
-<img src="https://img.shields.io/badge/coverage-80%25-09f.svg">
-<img src="https://img.shields.io/badge/license-MIT-09f.svg"> -->
-[![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://img.shields.io/badge/author-JowayYoung-f66.svg)
-[![version](https://img.shields.io/badge/version-0.2.9-f66.svg)](https://img.shields.io/badge/version-0.2.9-f66.svg)
+[![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/bruce-cli)
+[![version](https://img.shields.io/badge/version-0.2.9-f66.svg)](https://github.com/JowayYoung/bruce-cli)
+[![node](https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![npm](https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/bruce-cli)
+[![build](https://img.shields.io/badge/build-passing-f90.svg)](https://github.com/JowayYoung/bruce-cli)
+[![coverage](https://img.shields.io/badge/coverage-80%25-09f.svg)](https://github.com/JowayYoung/bruce-cli)
+[![license](https://img.shields.io/badge/license-MIT-09f.svg)](https://github.com/JowayYoung/bruce-cli)
 
-> `bruce-cli`是一个**React/Vue**应用自动化构建脚手架，其零配置开箱即用的优点非常适合入门级、初中级、快速开发项目的前端同学使用，还可通过创建`brucerc.js`文件来覆盖其默认配置，只需专注业务代码的编写无需关注构建代码的编写，让项目结构更简洁。详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，使用时记得查看文档哟，喜欢的可以给个Star
+> `bruce-cli`是一个**React/Vue**应用自动化构建脚手架，其零配置开箱即用的优点非常适合入门级、初中级、快速开发项目的前端同学使用，还可通过创建`brucerc.js`文件来覆盖其默认配置，只需专注业务代码的编写无需关注构建代码的编写，让项目结构更简洁。详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，使用时记得查看文档哟，喜欢的话给个Star
 
 ### 🎥背景
 
@@ -19,33 +17,32 @@
 
 ### 🔗依赖
 
-> 本项目是基于`Webpack4.x.x`进行开发的极速零配置开箱即用的Web应用打包工具(**每次更新都会保持最新的依赖**)，集成各种常用工具(`Handlebars`、`Postcss`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Tslint`等)扩展构建功能，用于构建和管理**React/Vue**技术栈的项目应用
+> 本项目是基于`Webpack4.x.x`进行开发的极速零配置开箱即用的Web应用构建工具(**每次更新都会保持最新的依赖**)，集成各种常用工具(`Handlebars`、`Postcss`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Tslint`等)扩展构建功能，用于构建和管理**React/Vue**技术栈的项目应用
 
-<img src="https://img.shields.io/badge/commander-4.x.x-f90.svg">
-<img src="https://img.shields.io/badge/inquirer-7.x.x-f90.svg">
-<img src="https://img.shields.io/badge/webpack-4.x.x-f66.svg">
-<img src="https://img.shields.io/badge/handlebars-4.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/postcss-7.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/sass-1.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/less-3.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/babel-7.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/typescript-3.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/stylelint-13.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/eslint-6.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/tslint-6.x.x-3c9.svg">
-<img src="https://img.shields.io/badge/react-16.x.x-09f.svg">
-<img src="https://img.shields.io/badge/vue-2.x.x-09f.svg">
+[![commander](https://img.shields.io/badge/commander-5.x.x-f90.svg)](https://github.com/JowayYoung/bruce-cli)
+[![inquirer](https://img.shields.io/badge/inquirer-7.x.x-f90.svg)](https://github.com/JowayYoung/bruce-cli)
+[![webpack](https://img.shields.io/badge/webpack-4.x.x-f66.svg)](https://github.com/JowayYoung/bruce-cli)
+[![handlebars](https://img.shields.io/badge/handlebars-4.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![postcss](https://img.shields.io/badge/postcss-7.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![sass](https://img.shields.io/badge/sass-1.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![less](https://img.shields.io/badge/less-3.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![babel](https://img.shields.io/badge/babel-7.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![typescript](https://img.shields.io/badge/typescript-3.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![stylelint](https://img.shields.io/badge/stylelint-13.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![eslint](https://img.shields.io/badge/eslint-6.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![tslint](https://img.shields.io/badge/tslint-6.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![react](https://img.shields.io/badge/react-16.x.x-09f.svg)](https://github.com/JowayYoung/bruce-cli)
+[![vue](https://img.shields.io/badge/vue-2.x.x-09f.svg)](https://github.com/JowayYoung/bruce-cli)
 
 ### 📦安装
 
-- `npm i -g bruce-cli`
-- `yarn global add bruce-cli`
+`npm i -g bruce-cli`
 
 > 安装失败
 
-- 将npm源镜像设置为淘宝镜像：`npm config set registry https://registry.npm.taobao.org`
-- 将sass源镜像设置为淘宝镜像：`npm config set sass-binary-site https://npm.taobao.org/mirrors/node-sass`
-- 重新执行命令安装：`npm i -g bruce-cli` 或 `yarn add global bruce-cli`
+- 将NPM源镜像设置为淘宝镜像：`npm config set registry https://registry.npm.taobao.org`
+- 将Sass源镜像设置为淘宝镜像：`npm config set sass-binary-site https://npm.taobao.org/mirrors/node-sass`
+- 重新执行命令安装：`npm i -g bruce-cli`
 
 ### 💻使用
 
@@ -59,15 +56,15 @@
 
 ### ☎️语言
 
-- [x] zh-chs 简体中文 **<font color="#f66">默认</font>**
-- [x] zh-cht 繁體中文
-- [x] en English
+- [x] **zh-chs**：简体中文 **<font color="#f66">默认</font>**
+- [x] **zh-cht**：繁體中文
+- [x] **en**：English
 
 ### 💡功能
 
 > 命令功能
 
-- [x] **构建项目**：根据终端交互式问答选择所需的配置进行项目调试和项目打包
+- [x] **构建项目**：根据终端交互式问答选择所需的配置进行项目调试和项目构建
 - [x] **初始项目**：根据终端交互式问答选择所需的配置生成项目的基本文件和入口文件
 - [x] **切换语言**：切换在终端面板中显示的文本语言，可选简体中文、繁体中文、英文
 - [x] **创建组件**：输入组件路径后在项目根目录对应的路径下创建模板文件
@@ -76,9 +73,9 @@
 > 内置功能
 
 - [x] **模式选择**：提供`开发环境`、`测试环境`、`生产环境`三种模式，每种模式对应不同的构建配置和优化方案
-- [x] **端口监听**：使用开发模式时，启动本地服务器，并监听指定端口，可自动打开浏览器来访问页面
-- [x] **局部刷新**：启用Webpack内置的`HMR`，配合`react-hot-loader`或`vue-loader`，增量更新`css文件`和`js文件`，修哪更哪，无需刷新页面即可实时看见修改结果，并保存当前状态管理
-- [x] **入口判断**：快速扫描项目中指定的入口文件路径，判断其是否存在，项目构建中入口文件作为根节点，必须得保证其存在和路径正确
+- [x] **端口监听**：使用开发模式时，启动本地服务器并监听指定端口，可自动打开浏览器来访问页面
+- [x] **局部刷新**：启用Webpack内置的`Hot Module Replacement`，配合`react-hot-loader`或`vue-loader`，增量更新`css文件`和`js文件`，修哪更哪，无需刷新页面即可实时看见修改结果，并保存当前数据管理状态
+- [x] **入口判断**：快速扫描项目中指定的入口文件路径，判断其是否存在，项目构建时以入口文件作为根节点，必须得保证其存在和路径正确
 - [x] **垫片插入**：根据项目兼容性自动插入垫片，兼容低版本浏览器
 	- 插入动态`polyfill`，根据浏览器请求时的`UserAgent`返回垫片文件，`babel`编译JS代码时就不带上垫片进行编译，起到`减包作用`
 	- 插入静态`polyfill`，根据`browserslist`和编写代码中的ES6语法自动插入所需的垫片代码
@@ -95,7 +92,7 @@
 	- `CSS校验`：内置`stylelint`，配置标准的CSS语法规则，对开发过程中出现的语法错误进行检查和纠正
 	- `JS校验`：内置`eslint`和`tslint`，配置标准的JS和TS语法规则，对开发过程中出现的语法错误进行检查和纠正
 - [x] **友好提示**：当遇到警告和错误时输出语法高亮的代码片段和解决提示，帮助开发者定位问题
-- [x] **代码分割**：对业务代码进行打包，分割成`WebpackRuntime代码块`、`第三方依赖代码块`、`公共业务代码块`、`单个业务代码块`
+- [x] **代码分割**：对业务代码进行构建，分割成`WebpackRuntime代码块`、`第三方依赖代码块`、`公共业务代码块`、`单个业务代码块`
 - [x] **代码合并**：通过对相同模块、相同功能或复用多次的代码进行整体合并，起到`减包作用`
 - [x] **压缩合并**：
 	- `CSS压缩`：内置`cssnano`，对抽离出来的CSS进行压缩去重
@@ -103,32 +100,33 @@
 	- `图片压缩`：内置`imagemin`，对`jpg`、`png`等图像进行无损压缩
 - [x] **接口代理**：使用`proxy`反向代理服务端接口，解决接口跨域问题
 - [x] **资源处理**：使用`file-loader`和`url-loader`来处理字体、图像、音频、视频等媒体资源，图像小于10k时转换为`base64形式`
+- [x] **作用提升**：启用Webpack内置的`Scope Hoisting`，分析出模块之间的依赖关系，把构建好的模块合并到一个函数中，起到`减包作用`
 - [x] **摇树优化**：启用Webpack内置的`Tree Shaking`，禁止`babel`把代码转换成`CommonJS规范`，使用`ESM规范`的静态声明特点来去除不被引用或不被执行的代码块，起到`减包作用`
-- [x] **缓存优化**：在开启文件哈希化后，根据文件哈希值是否发生变化来执行打包操作，哈希没有变化的文件直接从缓存中获取，减少打包生成文件的时间
+- [x] **缓存优化**：在开启文件哈希化后，根据文件哈希值是否发生变化来执行构建操作，哈希没有变化的文件直接从缓存中获取，减少构建生成文件的时间
 - [x] **文件哈希**：可对生成文件设置哈希值，只有文件内容修改了才会更改哈希值，用于长缓存优化
 - [x] **文件缓存**：第一次构建速度可能慢一些，构建完成后会生成本地缓存文件，可提高后续再次构建的速度
 - [x] **目录时化**：可对输出的项目根目录进行时间序列化命名，增加时间戳来区分版本
-- [x] **打包分析**：可在打包完成后展示打包依赖的关系，根据关系图对模块的编写进行合理的分配和修改
-- [x] **文件上传**：暴露出构建成功的钩子，可在钩子函数上编写上传到服务器的代码用于打包后将文件上传到服务器，还可进行其他操作
+- [x] **构建分析**：可在构建完成后展示构建依赖的关系，根据关系图对模块的编写进行合理的分配和修改
+- [x] **文件上传**：暴露出构建成功的钩子，可在钩子函数上编写上传到服务器的代码用于构建后将文件上传到服务器，还可进行其他操作
 - [x] **配置定制**：当部分配置不符合项目需求时，可通过项目根目录下的配置文件`brucerc.js`来修改默认配置，构建启动时就会使用此配置文件来覆盖默认构建配置
 
 ### ⚙️配置
 
-- **alias**：模块导入快捷方式，配置详情请参考[webpack resolve alias](https://webpack.js.org/configuration/resolve/#resolve-alias)
+- **alias**：模块导入快捷方式，配置详情请参考[webpack-resolve-alias](https://webpack.js.org/configuration/resolve/#resolve-alias)
 - **browserList**：目标浏览器配置列表，配置详情请参考[browserslist](https://github.com/browserslist/browserslist)
 - **errorCb(err)**：构建失败回调函数，可自定其他操作
 	- `err`：错误信息
-- **eslintIgnores**：Eslint忽略路径列表，配置详情请参考[eslint ignores](https://eslint.org/docs/user-guide/configuring#using-eslintignore-in-packagejson)
-- **eslintRules**：Eslint校验规则列表，配置详情请参考[eslint rules](https://eslint.org/docs/user-guide/configuring#configuring-rules)和[rules](https://eslint.org/docs/rules/)
+- **eslintIgnores**：Eslint忽略路径列表，配置详情请参考[eslint-ignores](https://eslint.org/docs/user-guide/configuring#using-eslintignore-in-packagejson)
+- **eslintRules**：Eslint校验规则列表，配置详情请参考[eslint-rules](https://eslint.org/docs/user-guide/configuring#configuring-rules)和[rules](https://eslint.org/docs/rules/)
 - **frame**：开发框架(`default`表示普通应用，`react`表示React应用，`vue`表示Vue应用)
 - **includeModules**：编译模块白名单列表(`node_modules/xxx`)，默认是不对`node_modules`进行编译
 - **openPath**：开发环境下浏览器打开后显示URL路径
-- **proxy**：接口代理，配置详情请参考[webpack-dev-server proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy)
+- **proxy**：接口代理，配置详情请参考[webpack-dev-server-proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy)
 - **publicPathProd**：生产环境公共路径
 - **publicPathTest**：测试环境公共路径
 - **style**：样式格式(`scss、less`)
-- **stylelintIgnores**：Stylelint忽略路径列表，配置详情请参考[stylelint ignores](https://stylelint.io/user-guide/configuration/#ignorefiles)
-- **stylelintRules**：Stylelint校验规则列表，配置详情请参考[stylelint rules](https://stylelint.io/user-guide/configuration/#rules)和[rules](https://stylelint.io/user-guide/rules/)
+- **stylelintIgnores**：Stylelint忽略路径列表，配置详情请参考[stylelint-ignores](https://stylelint.io/user-guide/configuration/#ignorefiles)
+- **stylelintRules**：Stylelint校验规则列表，配置详情请参考[stylelint-rules](https://stylelint.io/user-guide/configuration/#rules)和[rules](https://stylelint.io/user-guide/rules/)
 - **successCb(mode, dir)**：构建成功回调函数，可自定义上传文件操作或其他操作
 	- `mode`：运行环境(`test`表示测试环境，`prod`表示生产环境)
 	- `dir`：输出路径
@@ -141,7 +139,6 @@
 		- `path`：目标文件路径
 		- `privateKey`：秘钥(不可与`password`共存)
 		- `username`：账号
-- **useAssetsRelPath**：使用资源相对路径
 - **useTs**：集成TypeScript
 
 > 默认配置
@@ -155,7 +152,7 @@ module.exports = {
         "last 20 Opera versions",
         "Explorer >= 10",
         "Safari >= 8",
-        "Android >= 4.4",
+        "Android >= 5",
         "iOS >= 8"
     ],
     errorCb: null,
@@ -178,7 +175,6 @@ module.exports = {
     },
     successCb: null,
     uploadOpts: null,
-    useAssetsRelPath: true,
     useTs: false
 };
 ```
@@ -244,7 +240,6 @@ module.exports = {
             username: "root"
         };
     },
-    useAssetsRelPath: false,
     useTs: true
 };
 ```
@@ -258,20 +253,21 @@ module.exports = {
 - 当前应用只能是`React`应用或`Vue`应用才能使用`bruce n`命令
 - 配置文件`brucerc.js`的属性是`null`、`[]`、`{}`时，会使用内置配置默认值
 - 请务必遵循构建错误提示进行修正，不要随意改动构建源代码和生成配置，有可能导致项目构建进程无法运行
+- 多次构建后可能因为长时间使用长缓存优化，导致缓存有几率读取失败，重新构建时可能会提示错误，此时执行`bruce r`删除`node_modules`并重新安装依赖即可
 
 > IDE相关
 
 - 推荐使用[VSCode](https://code.visualstudio.com/)进行项目开发，以下配置也是基于`VSCode`进行
 - 如果启用`Stylelint`、`Eslint`、`Tslint`，需要在IDE上安装[Stylelint插件](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)、[Eslint插件](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)、[Tslint插件](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)才能配合本项目代码校验高亮显示警告和错误
-- 如需`Stylelint`高亮显示语法错误和保存时自动修复语法错误，可在`首选项`>`设置`中设定(目前失效)
+- 如需`Stylelint`高亮显示语法错误和保存时自动修复语法错误，可在`首选项`>`设置`中设定(参考插件文档，目前失效)
 - 如需`Eslint`高亮显示语法错误和保存时自动修复语法错误，可在`首选项`>`设置`中设定(参考插件文档)
 - 如需`Tslint`高亮显示语法错误和保存时自动修复语法错误，可在`首选项`>`设置`中设定(参考插件文档)
 
 > 文件相关
 
 - 项目只能单独存在JS或TS，JS项目下脚本文件只能是`.js`或`.jsx`，TS项目下脚本文件只能是`.ts`或`.tsx`
-- 应用类型为SPA时，入口文件必须为`src/index.js|ts|jsx|tsx`
-- 应用类型为MPA时，入口文件必须为`src/pages/pageName/index.js|ts|jsx|tsx`
+- 应用类型为SPA时，入口文件必须为`src/index.(js|ts|jsx|tsx)`
+- 应用类型为MPA时，入口文件必须为`src/pages/pageName/index.(js|ts|jsx|tsx)`
 - 当`src/pages`目录存在且包含子文件夹，则自动识别为`MPA项目`
 - 使用`CSS精灵图`时，必须把图标统一放到`src/assets/icon`下，且文件格式为`png`
 - 暴露出全局变量`RUN_ENV`用于获取当前运行环境，在使用`Eslint`或`Tslint`的情况下会报语法错误，在后面加上`eslint-disable-line`或`tslint:disable-line`即可
@@ -285,14 +281,19 @@ module.exports = {
 > 垫片相关
 
 - `@babel/polyfill`在`7.4.0`后被弃用，因此本项目使用的垫片为`core-js`和`regenerator-runtime`
-- 如无特殊兼容，入口文件最顶处无需增加`import "core-js/stable";`和`import "regenerator-runtime/runtime";`
-- 如需兼容低版本浏览器，在入口文件最顶处加入`import "core-js/stable";`和`import "regenerator-runtime/runtime";`(`core-js`版本必须为`2.x.y`)
+- 如无特殊兼容，入口文件最顶处无需增加`import "core-js/stable";`和`import "regenerator-runtime/runtime";`，构建程序会自行根据预设环境和`browserslist`增加垫片
+- 如需兼容低版本浏览器，需手动安装`core-js`(`core-js`版本必须为`2.x.y`)和`regenerator-runtime`，在入口文件最顶处加入`import "core-js/stable";`和`import "regenerator-runtime/runtime";`
+
+> ES6相关
+
+- 执行`bruce b`构建项目时，如果是首次构建，会提示构建`package.json`下`dependencies`的依赖(`Dll构建`)，目的是加快后续开发中`HMR`的构建速度，只构建修改的文件，其余文件一概不进行增量构建
+- 如果某个依赖使用ESM的按需导入，在执行`bruce b`构建项目时不要选择此依赖进项`Dll构建`，并在`brucerc.js`的`includeModules`上增加此依赖，构建时会去除不被引用或不被执行的代码块
 
 > TS相关
 
 - 当使用TS时，会在项目根目录下自动生成配置文件`tsconfig.json`
 - 如需修改TS配置，只需修改`tsconfig.json`
-- 如需修改Tslint配置，在项目根目录下创建配置文件`tslint.json`，手动编写配置覆盖默认Tslint配置
+- 如需修改Tslint配置，在项目根目录下创建配置文件`tslint.json`，手动编写配置可覆盖默认Tslint配置
 
 > Default项目相关(*`bruce i`初始项目时选择`default`*)
 
@@ -306,18 +307,24 @@ module.exports = {
 
 ### ⚖️对比
 
+Github上常见的构建项目都是暴露出很多构建代码，构建代码和业务代码完全耦合在一起，导致维护和升级成本加重，重新开一个项目还是会遇上这些问题。
+
+本项目就显得比较特殊，真正实现构建代码和业务代码的完全分离，以`NPM模块`的形式锁定构建代码，只通过一个配置文件与业务代码进行通讯，让开发者解放双手，只需写好业务代码。
+
+下面对传统构建方案和本构建方案进行对比：
+
 - 传统构建方案
 - 本构建方案
 
 > 传统构建方案
 
-基于`Gulp`和`Webpack`构建的`React项目`，项目代码分为**构建代码**和**业务代码**，项目目录和文件配置是比较传统和多人使用的项目搭建方案。整个项目中除去业务代码后，构建代码的文件比较多，配置比较分散，比较难集中管理，无法做到开箱即用，通用性比较低，前期搭建项目构建方案可能花费的时间比较多，项目构建时需依赖本项目存在的依赖模块才能驱动。对于增删改构建功能和新同事入门，可能需要花比较多的时间去查找代码和熟悉构建逻辑
+基于`Gulp/Webpack`构建的`React/Vue项目`，项目代码分为**构建代码**和**业务代码**，项目目录和文件配置是比较传统和多人使用的项目搭建方案。整个项目中除去业务代码后，构建代码的文件比较多，配置比较分散，比较难集中管理，无法做到开箱即用，通用性比较低，前期搭建项目构建方案可能花费的时间比较多，项目构建时需依赖本项目存在的依赖模块才能驱动。对于增删改构建功能和新同事入门，可能需要花比较多的时间去查找代码和熟悉构建逻辑。
 
 ![传统构建方案目录](https://yangzw.vip/static/article/bruce-cli/project-c.png)
 
 > 本构建方案
 
-基于本项目构建的`React项目`，代码只有**业务代码**，构建代码集中在一起做成一个`npm模块`并安装到全局环境中，通过命令调用本方案来驱动需要开发的项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大节省项目前期准备时间，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建准备，直接开箱即用，使开发者集中精力写好业务代码
+基于本项目构建的`React/Vue项目`，代码只有**业务代码**，构建代码集中在一起做成一个`NPM模块`并安装到全局环境中，通过命令调用本方案来驱动需要开发的项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大缩减项目前期的准备工作，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建的时间，直接开箱即用，使开发者集中精力写好业务代码。
 
 ![本构建方案目录](https://yangzw.vip/static/article/bruce-cli/project-s.png)
 
@@ -325,28 +332,30 @@ module.exports = {
 
 ~|传统构建方案|本构建方案
 :-:|-|-
-构建文件|`build文件夹` `config文件夹` `tools文件夹`<br>`.browserslistrc`<br>`.postcssrc` `.babelrc`<br>`.stylelintignore` `.stylelintrc`<br>`.eslintignore` `.eslintrc`|无
+构建文件|`build文件夹`、`config文件夹`<br>`.browserslistrc`<br>`.postcssrc`、`babelrc`<br>`.stylelintignore`、`.stylelintrc`<br>`.eslintignore`、`.eslintrc`|无
 业务文件|`src文件夹`|`src文件夹`
-配置文件|无(已集成在构建文件中)|`brucerc.js`
-基础文件|`package.json` `readme.md`|`package.json` `readme.md`
-依赖模块|`Webpack技术栈`(构建) `React技术栈`(业务)|`React技术栈`(业务)
-安装时间|较慢<br>安装构建和业务代码依赖的模块<br>每次开发都需安装一次|较快<br>只安装业务代码依赖的模块<br>全局安装一次即可
-开发准备|编写`webpack`和多种工具搭配的构建代码|开箱即用
+配置文件|很多，需要分开书写|`brucerc.js`
+基础文件|`package.json`、`readme.md`|`package.json`、`readme.md`
+依赖模块|Webpack/Gulp技术栈(`构建`)<br>React/Vue技术栈(`业务`)|React/Vue技术栈(`业务`)
+安装时间|较慢<br>安装构建和业务代码的依赖模块<br>每次开发都需安装一次|较快<br>只安装业务代码的依赖模块<br>全局安装一次即可
+开发准备|编写Webpack/Gulp和多种工具搭配的构建代码|开箱即用
 全局使用|不可以|可以
 构建复用|新建文件夹，复制粘贴构建代码，修改配置文件等|执行命令行初始项目和构建项目
 新手构建|需了解构建代码逻辑和配置文件|执行命令行
 后期扩展|在原有构建代码中进行增删改构建功能|通过配置文件`brucerc.js`进行增删改构建功能
-配置管理|分散到不同的构建配置文件中|集成构建的基础配置<br>可通过配置文件`brucerc.js`进行覆盖
+配置管理|分散到不同的构建配置文件中<br>需对不同工具的配置文件进行修改|集成构建的基础配置<br>可通过配置文件`brucerc.js`进行覆盖
 
 ### 🔖版权
 
 MIT © [Joway Young](https://github.com/JowayYoung)
 
-本项目由本人独自开发，经过2年多的时间沉淀出来，过程中进行了大量的项目测试和应用，目前上线的项目多达20多个，足可以支撑本项目的可行性和稳定性。
+本项目由笔者独自开发，经过2年多的时间沉淀出来，过程中进行了大量的项目测试和应用，目前上线的项目多达40多个，足可支撑本项目的可行性和稳定性。
 
-由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可以随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议，我会立马反馈和修复相关Bug。
+由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议，笔者会立马反馈和修复相关Bug。
 
 ### 🔨示例
+
+以下是一个完整的项目开发流程：
 
 - 查看帮助：`bruce -h`
 - 查看版本：`bruce -v`
@@ -355,14 +364,17 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 - 初始项目：`bruce i`
 - 进入项目根目录：`cd myProject`
 - 构建项目：`bruce b`
-- 创建组件(构建项目时需另起一个`cmd`窗口执行)：`bruce n`
-- 删除依赖：`bruce r`
+- 创建组件(处于开发状态时需另起一个`cmd`窗口执行)：`bruce n`
+- 发布项目(处于开发状态时需另起一个`cmd`窗口执行)：`bruce b`
+- 删除依赖(出现构建失败或其他突发情况)：`bruce r`
+
+笔者的个人官网是使用`bruce-cli`进行构建的，可当做`bruce-cli`的展示例子，有兴趣的同学请戳[JowayYoung个人官网](https://yangzw.vip)查看详情。
 
 ### 📝待做
 
 - [ ] 修复Vue项目下无法校验vue文件外的CSS
 - [ ] 增加Vue项目下使用Tslint校验vue文件
-- [ ] 由于Tslint的性能问题，后续所有Tslint功能改由Eslint代替(这是一个大工程，估计得花2周时间重构现有的Lint配置)
+- [ ] 由于Tslint的性能问题，后续所有Tslint功能改由Eslint代替(`这是一个大工程，估计得花2周时间重构现有的Lint配置`)
 
 ```!
 TypeScript的Tslint功能暂时不要使用，存在一些问题待修复
@@ -372,14 +384,14 @@ TypeScript的Tslint功能暂时不要使用，存在一些问题待修复
 
 本项目源于我2017年3月份一个Angular项目里的构建代码，从最开始的`Webpack2`一直迭代到今天的`Webpack4`，话说`Webpack5`过段时间就要出了。
 
-最初我的构思是写一份构建代码模板存放在Github上，然后通过脚本把构建代码拉下来。可是这样构建代码和业务代码还是同时存放在一个文件夹里，不容易管理，文件又多又杂。下次新开项目时又要把构建代码复制过去，有时升级构建功能，为了保持构建功能的统一，需要同时修改几个项目里的构建代码，妈的真烦。既然这样，为什么不把那些通用的构建代码抽出来做成一个npm模块呢，这样一次安装全局运行，多爽呀！
+最初我的构思是写一份构建代码模板存放在Github上，然后通过脚本把构建代码拉下来。可是这样构建代码和业务代码还是同时存放在一个文件夹里，不容易管理，文件又多又杂。下次新开项目时又要把构建代码复制过去，有时升级构建功能，为了保持构建功能的统一，需要同时修改几个项目里的构建代码。既然这样，为什么不把那些通用的构建代码抽出来做成一个NPM模块呢，这样一次安装全局运行，多爽呀！
 
-2018年3月我就开始对这个项目进行升级改造，做成一个npm模块，只不过一直在自己的电脑里跑。因为还没怎样应用到项目里，所以也不敢开源。经过差不多1年大大小小20多个项目的应用，终于稳定了这个项目的功能，所以我也决定对`bruce-cli`进行开源。对于所有通过`bruce-cli`创建的项目都可以开箱即用所有构建功能，如无特殊需求甚至是零配置即可运行项目。
+2017年5月我就开始对这个项目进行升级改造，做成一个NPM模块，只不过一直在自己负责的项目上应用。因为还没怎样应用到其他的项目上，所以也不敢开源。经过差不多1年大大小小20多个项目的应用，终于稳定了这个项目的功能，所以我也决定对`bruce-cli`进行开源。对于所有通过`bruce-cli`创建的项目都可开箱即用所有的构建功能，如无特殊需求甚至是零配置即可运行项目。
 
-开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node服务端开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。截止2020年，已成功运用在自己所负责的项目达到40多个，再加上一些同行朋友和一些小公司也有使用本项目。
+开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node应用开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。截止2020年，已成功运用在自己所负责的项目达到40多个，再加上一些同行朋友和一些小公司也有使用本项目。
 
-本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可以随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的可以给个[Star](https://github.com/JowayYoung/bruce-cli)。
+本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的话给个[Star](https://github.com/JowayYoung/bruce-cli)。
 
-**关注公众号`IQ前端`，更多前端小干货等着你喔！我是`JowayYoung`，喜欢分享前端技术和生活纪事，学习与生活不落下，每天进步一点点，与大家相伴成长**
+**关注公众号`IQ前端`，一个专注于CSS/JS开发技巧的前端公众号，更多前端小干货等着你喔**
 
 ![](https://yangzw.vip/static/frontend/account/IQ前端公众号.jpg)

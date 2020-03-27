@@ -1,5 +1,5 @@
 <template>
-	<div class="demo-page flex-ct-x">
+	<div class="demo-page flex-ct-y">
 		<h1>
 			<span class="gradient">bruce-cli</span>
 			<img src="./assets/img/logo.svg" />
@@ -12,7 +12,6 @@
 <style lang="scss">
 .demo-page {
 	overflow: hidden;
-	flex-direction: column;
 	height: 100vh;
 	background-color: #282c34;
 	h1 {

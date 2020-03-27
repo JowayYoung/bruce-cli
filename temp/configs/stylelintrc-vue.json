@@ -8,11 +8,14 @@
 			{
 				"ignoreAtRules": [
 					"content",
+					"each",
 					"error",
 					"extend",
+					"for",
 					"if",
 					"include",
-					"mixin"
+					"mixin",
+					"while"
 				]
 			}
 		],

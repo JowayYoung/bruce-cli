@@ -124,6 +124,12 @@ xmp {
 	margin: 0;
 	padding: 0;
 }
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 body {
 	font: 14px/1 "PingFang SC", "Microsoft YaHei", sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -146,15 +152,6 @@ select,
 textarea {
 	box-sizing: border-box;
 	outline: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: normal;
-	font-size: 100%;
 }
 a,
 a:link,

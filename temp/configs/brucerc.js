@@ -16,6 +16,5 @@ module.exports = {
 	stylelintRules: {}, // Stylelint校验规则列表
 	successCb: null, // 构建成功回调函数
 	uploadOpts: null, // 上传配置函数
-	useAssetsRelPath: true, // 使用资源相对路径
 	useTs: false // 集成TypeScript
 };
