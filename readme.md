@@ -1,15 +1,15 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-f66.svg">
 
-<img src="https://img.shields.io/badge/author-JowayYoung-f66.svg">
-<img src="https://img.shields.io/badge/version-0.2.8-f66.svg">
+<!-- <img src="https://img.shields.io/badge/author-JowayYoung-f66.svg">
+<img src="https://img.shields.io/badge/version-0.2.9-f66.svg">
 <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg">
 <img src="https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg">
-<img src="https://img.shields.io/badge/size-180kb-09f.svg">
-<img src="https://img.shields.io/badge/coverage-80%25-09f.svg">
 <img src="https://img.shields.io/badge/test-passing-f90.svg">
 <img src="https://img.shields.io/badge/build-passing-f90.svg">
-<img src="https://img.shields.io/badge/platform-win--32%20%7C%20win--64%20%7C%20mac--64%20%7C%20linux--64-66f.svg">
-<img src="https://img.shields.io/badge/license-MIT-66f.svg">
+<img src="https://img.shields.io/badge/coverage-80%25-09f.svg">
+<img src="https://img.shields.io/badge/license-MIT-09f.svg"> -->
+[![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://img.shields.io/badge/author-JowayYoung-f66.svg)
+[![version](https://img.shields.io/badge/version-0.2.9-f66.svg)](https://img.shields.io/badge/version-0.2.9-f66.svg)
 
 > `bruce-cli`是一个**React/Vue**应用自动化构建脚手架，其零配置开箱即用的优点非常适合入门级、初中级、快速开发项目的前端同学使用，还可通过创建`brucerc.js`文件来覆盖其默认配置，只需专注业务代码的编写无需关注构建代码的编写，让项目结构更简洁。详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，使用时记得查看文档哟，喜欢的可以给个Star
 
