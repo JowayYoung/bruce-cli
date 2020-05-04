@@ -9,8 +9,6 @@ module.exports = {
 	includeModules: [], // 编译模块白名单列表(node_modules/xxx)
 	openPath: "", // 开发环境下浏览器打开后显示URL路径
 	proxy: {}, // 接口代理
-	publicPathProd: "", // 生产环境公共路径
-	publicPathTest: "", // 测试环境公共路径
 	style: "scss", // 样式格式
 	stylelintIgnores: [], // Stylelint忽略路径列表
 	stylelintRules: {}, // Stylelint校验规则列表

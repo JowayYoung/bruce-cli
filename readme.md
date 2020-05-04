@@ -1,7 +1,7 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-66f.svg">
 
 [![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/bruce-cli)
-[![version](https://img.shields.io/badge/version-0.2.9-f66.svg)](https://github.com/JowayYoung/bruce-cli)
+[![version](https://img.shields.io/badge/version-0.3.0-f66.svg)](https://github.com/JowayYoung/bruce-cli)
 [![node](https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![npm](https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/bruce-cli)
@@ -10,6 +10,8 @@
 [![license](https://img.shields.io/badge/license-MIT-09f.svg)](https://github.com/JowayYoung/bruce-cli)
 
 > `bruce-cli`是一个**React/Vue**应用自动化构建脚手架，其零配置开箱即用的优点非常适合入门级、初中级、快速开发项目的前端同学使用，还可通过创建`brucerc.js`文件来覆盖其默认配置，只需专注业务代码的编写无需关注构建代码的编写，让项目结构更简洁。详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，使用时记得查看文档哟，喜欢的话给个Star
+
+![bruce-cli](https://yangzw.vip/static/article/bruce-cli/bruce-cli.png)
 
 ### 🎥背景
 
@@ -122,8 +124,6 @@
 - **includeModules**：编译模块白名单列表(`node_modules/xxx`)，默认是不对`node_modules`进行编译
 - **openPath**：开发环境下浏览器打开后显示URL路径
 - **proxy**：接口代理，配置详情请参考[webpack-dev-server-proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy)
-- **publicPathProd**：生产环境公共路径
-- **publicPathTest**：测试环境公共路径
 - **style**：样式格式(`scss、less`)
 - **stylelintIgnores**：Stylelint忽略路径列表，配置详情请参考[stylelint-ignores](https://stylelint.io/user-guide/configuration/#ignorefiles)
 - **stylelintRules**：Stylelint校验规则列表，配置详情请参考[stylelint-rules](https://stylelint.io/user-guide/configuration/#rules)和[rules](https://stylelint.io/user-guide/rules/)
@@ -165,8 +165,6 @@ module.exports = {
     includeModules: [],
     openPath: "",
     proxy: {},
-    publicPathProd: "",
-    publicPathTest: "",
     style: "scss",
     stylelintIgnores: [],
     stylelintRules: {
@@ -219,8 +217,6 @@ module.exports = {
         secure: false,
         target: "https://www.baidu.com"
     }],
-    publicPathProd: "https://www.baidu.com",
-    publicPathTest: "https://www.baidu.com",
     style: "less",
     stylelintIgnores: [
         "src/assets/css/*"
@@ -368,17 +364,25 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 - 发布项目(处于开发状态时需另起一个`cmd`窗口执行)：`bruce b`
 - 删除依赖(出现构建失败或其他突发情况)：`bruce r`
 
+正确使用姿势请看这个[视频](https://www.bilibili.com/video/BV1UK41157fX)，简单易用方便快捷，一键安装全局使用，实在是**远离架构专注编码的必备工具**。
+
 笔者的个人官网是使用`bruce-cli`进行构建的，可当做`bruce-cli`的展示例子，有兴趣的同学请戳[JowayYoung个人官网](https://yangzw.vip)查看详情。
 
 ### 📝待做
 
 - [ ] 修复Vue项目下无法校验vue文件外的CSS
 - [ ] 增加Vue项目下使用Tslint校验vue文件
-- [ ] 由于Tslint的性能问题，后续所有Tslint功能改由Eslint代替(`这是一个大工程，估计得花2周时间重构现有的Lint配置`)
 
 ```!
-TypeScript的Tslint功能暂时不要使用，存在一些问题待修复
+由于Tslint的性能问题，后续所有Tslint功能改由Eslint代替(这是一个大工程，估计得花2周时间重构现有的Lint配置)
 ```
+
+### 📆日志
+
+**0.3.0**更新日志
+
+- [x] React项目模板改用Reack Hooks的形式
+- [x] 移除publicPathProd和publicPathTest两个参数，打包文件引用路径统一使用绝对路径
 
 ### ⏳后记
 
