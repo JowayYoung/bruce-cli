@@ -16,7 +16,6 @@
 	background-color: #282c34;
 	h1 {
 		margin: 20px 0;
-		font-weight: bold;
 		font-size: 10vmin;
 	}
 	span {

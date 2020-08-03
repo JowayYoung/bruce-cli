@@ -1,9 +1,9 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-66f.svg">
 
 [![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/bruce-cli)
-[![version](https://img.shields.io/badge/version-0.3.0-f66.svg)](https://github.com/JowayYoung/bruce-cli)
-[![node](https://img.shields.io/badge/node-%3E%3D%2010.0.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
-[![npm](https://img.shields.io/badge/npm-%3E%3D%205.6.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![version](https://img.shields.io/badge/version-0.4.0-f66.svg)](https://github.com/JowayYoung/bruce-cli)
+[![node](https://img.shields.io/badge/node-%3E%3D%2012.0.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![npm](https://img.shields.io/badge/npm-%3E%3D%206.9.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/bruce-cli)
 [![build](https://img.shields.io/badge/build-passing-f90.svg)](https://github.com/JowayYoung/bruce-cli)
 [![coverage](https://img.shields.io/badge/coverage-80%25-09f.svg)](https://github.com/JowayYoung/bruce-cli)
@@ -11,7 +11,7 @@
 
 > `bruce-cli`是一个**React/Vue**应用自动化构建脚手架，其零配置开箱即用的优点非常适合入门级、初中级、快速开发项目的前端同学使用，还可通过创建`brucerc.js`文件来覆盖其默认配置，只需专注业务代码的编写无需关注构建代码的编写，让项目结构更简洁。详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，使用时记得查看文档哟，喜欢的话给个Star
 
-![bruce-cli](https://yangzw.vip/static/article/bruce-cli/bruce-cli.png)
+![bruce-cli](https://yangzw.vip/static/npm/bruce-cli/bruce-cli.png)
 
 ### 🎥背景
 
@@ -21,7 +21,7 @@
 
 > 本项目是基于`Webpack4.x.x`进行开发的极速零配置开箱即用的Web应用构建工具(**每次更新都会保持最新的依赖**)，集成各种常用工具(`Handlebars`、`Postcss`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Tslint`等)扩展构建功能，用于构建和管理**React/Vue**技术栈的项目应用
 
-[![commander](https://img.shields.io/badge/commander-5.x.x-f90.svg)](https://github.com/JowayYoung/bruce-cli)
+[![commander](https://img.shields.io/badge/commander-6.x.x-f90.svg)](https://github.com/JowayYoung/bruce-cli)
 [![inquirer](https://img.shields.io/badge/inquirer-7.x.x-f90.svg)](https://github.com/JowayYoung/bruce-cli)
 [![webpack](https://img.shields.io/badge/webpack-4.x.x-f66.svg)](https://github.com/JowayYoung/bruce-cli)
 [![handlebars](https://img.shields.io/badge/handlebars-4.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
@@ -31,7 +31,7 @@
 [![babel](https://img.shields.io/badge/babel-7.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![typescript](https://img.shields.io/badge/typescript-3.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![stylelint](https://img.shields.io/badge/stylelint-13.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
-[![eslint](https://img.shields.io/badge/eslint-6.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![eslint](https://img.shields.io/badge/eslint-7.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![tslint](https://img.shields.io/badge/tslint-6.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![react](https://img.shields.io/badge/react-16.x.x-09f.svg)](https://github.com/JowayYoung/bruce-cli)
 [![vue](https://img.shields.io/badge/vue-2.x.x-09f.svg)](https://github.com/JowayYoung/bruce-cli)
@@ -42,9 +42,9 @@
 
 > 安装失败
 
-- 将NPM源镜像设置为淘宝镜像：`npm config set registry https://registry.npm.taobao.org`
-- 将Sass源镜像设置为淘宝镜像：`npm config set sass-binary-site https://npm.taobao.org/mirrors/node-sass`
-- 重新执行命令安装：`npm i -g bruce-cli`
+- 切换**NPM镜像**为淘宝镜像：`npm config set registry https://registry.npm.taobao.org/`
+- 切换**Sass镜像**为淘宝镜像：`npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/`
+- 重新执行安装命令：`npm i -g bruce-cli`
 
 ### 💻使用
 
@@ -99,7 +99,7 @@
 - [x] **压缩合并**：
 	- `CSS压缩`：内置`cssnano`，对抽离出来的CSS进行压缩去重
 	- `JS压缩`：内置`uglifyjs`和`terser`，对抽离出来的JS进行压缩去重，`uglifyjs`用于压缩`ES5`，`terser`用于压缩`ES6`
-	- `图片压缩`：内置`imagemin`，对`jpg`、`png`等图像进行无损压缩
+	- `图像压缩`：内置`imagemin`，对`jpg`、`png`等图像进行无损压缩
 - [x] **接口代理**：使用`proxy`反向代理服务端接口，解决接口跨域问题
 - [x] **资源处理**：使用`file-loader`和`url-loader`来处理字体、图像、音频、视频等媒体资源，图像小于10k时转换为`base64形式`
 - [x] **作用提升**：启用Webpack内置的`Scope Hoisting`，分析出模块之间的依赖关系，把构建好的模块合并到一个函数中，起到`减包作用`
@@ -278,7 +278,7 @@ module.exports = {
 
 - `@babel/polyfill`在`7.4.0`后被弃用，因此本项目使用的垫片为`core-js`和`regenerator-runtime`
 - 如无特殊兼容，入口文件最顶处无需增加`import "core-js/stable";`和`import "regenerator-runtime/runtime";`，构建程序会自行根据预设环境和`browserslist`增加垫片
-- 如需兼容低版本浏览器，需手动安装`core-js`(`core-js`版本必须为`2.x.y`)和`regenerator-runtime`，在入口文件最顶处加入`import "core-js/stable";`和`import "regenerator-runtime/runtime";`
+- 如需兼容低版本浏览器，需手动安装`core-js`(`core-js`版本必须为`v3`)和`regenerator-runtime`，在入口文件最顶处加入`import "core-js/stable";`和`import "regenerator-runtime/runtime";`
 
 > ES6相关
 
@@ -316,13 +316,13 @@ Github上常见的构建项目都是暴露出很多构建代码，构建代码�
 
 基于`Gulp/Webpack`构建的`React/Vue项目`，项目代码分为**构建代码**和**业务代码**，项目目录和文件配置是比较传统和多人使用的项目搭建方案。整个项目中除去业务代码后，构建代码的文件比较多，配置比较分散，比较难集中管理，无法做到开箱即用，通用性比较低，前期搭建项目构建方案可能花费的时间比较多，项目构建时需依赖本项目存在的依赖模块才能驱动。对于增删改构建功能和新同事入门，可能需要花比较多的时间去查找代码和熟悉构建逻辑。
 
-![传统构建方案目录](https://yangzw.vip/static/article/bruce-cli/project-c.png)
+![传统构建方案目录](https://yangzw.vip/static/npm/bruce-cli/project-c.png)
 
 > 本构建方案
 
 基于本项目构建的`React/Vue项目`，代码只有**业务代码**，构建代码集中在一起做成一个`NPM模块`并安装到全局环境中，通过命令调用本方案来驱动需要开发的项目，实现构建代码和业务代码完全分离。开发时无需关注如何写好构建代码和使用何种工具扩展构建功能，只需专注于业务代码的编写，整个项目只存在业务代码，可通过配置文件修改默认构建配置，大大缩减项目前期的准备工作，保证项目的**简洁性**、**独立性**、**高效性**、**维护性**。省去项目前期搭建的时间，直接开箱即用，使开发者集中精力写好业务代码。
 
-![本构建方案目录](https://yangzw.vip/static/article/bruce-cli/project-s.png)
+![本构建方案目录](https://yangzw.vip/static/npm/bruce-cli/project-s.png)
 
 > 方案对比
 
@@ -340,14 +340,6 @@ Github上常见的构建项目都是暴露出很多构建代码，构建代码�
 新手构建|需了解构建代码逻辑和配置文件|执行命令行
 后期扩展|在原有构建代码中进行增删改构建功能|通过配置文件`brucerc.js`进行增删改构建功能
 配置管理|分散到不同的构建配置文件中<br>需对不同工具的配置文件进行修改|集成构建的基础配置<br>可通过配置文件`brucerc.js`进行覆盖
-
-### 🔖版权
-
-MIT © [Joway Young](https://github.com/JowayYoung)
-
-本项目由笔者独自开发，经过2年多的时间沉淀出来，过程中进行了大量的项目测试和应用，目前上线的项目多达40多个，足可支撑本项目的可行性和稳定性。
-
-由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议，笔者会立马反馈和修复相关Bug。
 
 ### 🔨示例
 
@@ -379,10 +371,25 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 ### 📆日志
 
-**0.3.0**更新日志
+**0.4.0**
 
-- [x] React项目模板改用Reack Hooks的形式
-- [x] 移除publicPathProd和publicPathTest两个参数，打包文件引用路径统一使用绝对路径
+- [x] 限制`bruce-cli`必须在`Node v12`以上使用
+- [x] 修改`core-js`版本检测，如需导入`core-js`作为Polyfill，必须使用`core-js v3`
+- [x] 增加`tinyimg-webpack-plugin`，用于压缩图像
+- [x] 调整终端交互面板的显示文案
+
+**0.3.0**
+
+- [x] React项目模板改用`Reack Hooks`的形式
+- [x] 移除`publicPathProd`和`publicPathTest`两个参数，打包文件引用路径统一使用绝对路径
+
+### 🔖版权
+
+MIT © [Joway Young](https://github.com/JowayYoung)
+
+本项目由笔者独自开发，经过2年多的时间沉淀出来，过程中进行了大量的项目测试和应用，目前上线的项目多达40多个，足可支撑本项目的可行性和稳定性。
+
+由于自己项目开发经验和技术积累有限，不能保证本项目不存在任何Bug，如果在后续使用本项目时发现Bug或产生疑问，可随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议，笔者会立马反馈和修复相关Bug。
 
 ### ⏳后记
 
@@ -394,8 +401,10 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node应用开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。截止2020年，已成功运用在自己所负责的项目达到40多个，再加上一些同行朋友和一些小公司也有使用本项目。
 
-本项目是基于`Node10`和`Node11`进行开发的，为了兼容`Node8+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。如果在后续使用本项目时发现Bug或产生疑问，可随时在[Issues](https://github.com/JowayYoung/bruce-cli/issues)上提出你的宝贵建议。使用时记得查看文档哟，详情请戳[这里](https://github.com/JowayYoung/bruce-cli)，喜欢的话给个[Star](https://github.com/JowayYoung/bruce-cli)。
+本项目是基于`Node12+`进行开发的，为了兼容`Node10+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。
+
+若觉得`bruce-cli`对你有帮助，可在[Issue](https://github.com/JowayYoung/bruce-cli/issues)上`提出你的宝贵建议`，笔者会认真阅读并整合你的建议。喜欢`bruce-cli`的请给一个[Star](https://github.com/JowayYoung/bruce-cli)，或[Fork](https://github.com/JowayYoung/bruce-cli)本项目到自己的`Github`上，根据自身需求定制功能。
 
 **关注公众号`IQ前端`，一个专注于CSS/JS开发技巧的前端公众号，更多前端小干货等着你喔**
 
-![](https://yangzw.vip/static/frontend/account/IQ前端公众号.jpg)
+![](https://static.yangzw.vip/frontend/account/IQ前端公众号.jpg)
