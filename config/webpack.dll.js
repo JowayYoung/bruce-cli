@@ -1,1 +1,1 @@
-undefined
+const{GetDllEntry:e}=require("./entry"),{GetDllOptimize:t}=require("./optimze"),{GetDllOutput:u}=require("./output"),i=require("./plugin");module.exports=function(o){return{devtool:!1,entry:e(o),mode:"production",optimization:t(),output:u(),plugins:new i({mode:0}).getPlugin()}};
