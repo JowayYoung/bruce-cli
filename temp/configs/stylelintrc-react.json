@@ -11,9 +11,11 @@
 					"error",
 					"extend",
 					"for",
+					"function",
 					"if",
 					"include",
 					"mixin",
+					"return",
 					"while"
 				]
 			}
@@ -26,6 +28,7 @@
 		"indentation": "tab",
 		"no-descending-specificity": null,
 		"no-missing-end-of-source-newline": null,
+		"no-empty-source": null,
 		"number-leading-zero": "never",
 		"rule-empty-line-before": "never"
 	}

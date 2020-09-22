@@ -2,7 +2,7 @@
 	<div class="demo-page flex-ct-y">
 		<h1>
 			<span class="gradient">bruce-cli</span>
-			<img src="./assets/img/logo.svg" />
+			<img src="./assets/img/logo.svg">
 		</h1>
 		<p>How to configure this <strong class="vue">Vue</strong> project</p>
 		<p>Check out the `<a href="https://github.com/JowayYoung/bruce-cli" class="gradient">bruce-cli docs</a>`</p>

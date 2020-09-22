@@ -12,9 +12,11 @@
 					"error",
 					"extend",
 					"for",
+					"function",
 					"if",
 					"include",
 					"mixin",
+					"return",
 					"while"
 				]
 			}

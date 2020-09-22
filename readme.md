@@ -1,7 +1,7 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-66f.svg">
 
 [![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/bruce-cli)
-[![version](https://img.shields.io/badge/version-0.4.2-f66.svg)](https://github.com/JowayYoung/bruce-cli)
+[![version](https://img.shields.io/badge/version-0.5.0-f66.svg)](https://github.com/JowayYoung/bruce-cli)
 [![node](https://img.shields.io/badge/node-%3E%3D%2012.0.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![npm](https://img.shields.io/badge/npm-%3E%3D%206.9.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/bruce-cli)
@@ -25,11 +25,11 @@
 [![inquirer](https://img.shields.io/badge/inquirer-7.x.x-f90.svg)](https://github.com/JowayYoung/bruce-cli)
 [![webpack](https://img.shields.io/badge/webpack-4.x.x-f66.svg)](https://github.com/JowayYoung/bruce-cli)
 [![handlebars](https://img.shields.io/badge/handlebars-4.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
-[![postcss](https://img.shields.io/badge/postcss-7.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![postcss](https://img.shields.io/badge/postcss-8.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![sass](https://img.shields.io/badge/sass-1.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![less](https://img.shields.io/badge/less-3.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![babel](https://img.shields.io/badge/babel-7.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
-[![typescript](https://img.shields.io/badge/typescript-3.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
+[![typescript](https://img.shields.io/badge/typescript-4.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![stylelint](https://img.shields.io/badge/stylelint-13.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![eslint](https://img.shields.io/badge/eslint-7.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![tslint](https://img.shields.io/badge/tslint-6.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
@@ -43,7 +43,7 @@
 > 安装失败
 
 - 切换**NPM镜像**为淘宝镜像：`npm config set registry https://registry.npm.taobao.org/`
-- 切换**Sass镜像**为淘宝镜像：`npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/`
+- 切换**Node镜像**为淘宝镜像：`npm config set disturl https://npm.taobao.org/mirrors/node/`
 - 重新执行安装命令：`npm i -g bruce-cli`
 
 ### 💻使用
@@ -86,8 +86,8 @@
 	- 使用`raw-loader`处理TXT，把文件内容以字符串的形式导入
 	- 使用`handlebars-loader`处理内联HTML和HBS，把HTML元素以内联的形式插入页面当中
 	- 使用`style-loader`和`css-loader`处理CSS，把CSS从JS中单独抽离出来
-	- 使用`postcss-loader`处理CSS新特性和草案规范，根据`browserslist`增加CSS前缀
-	- 使用`sass-loader`处理Sass，通过`node-sass`编译`sass文件`为`css文件`
+	- 使用`postcss-loader`处理CSS新特性和草案规范，根据`browserslist`增加CSS属性前缀
+	- 使用`sass-loader`处理Sass，通过`sass`编译`sass文件`为`css文件`
 	- 使用`less-loader`处理Less，通过`less`编译`less文件`为`css文件`
 	- 使用`babel-loader`根据预设环境和`browserslist`处理编写的`ES6代码`和`TS代码`，并生成浏览器可识别的`ES5代码`
 - [x] **代码校验**：确保编写的语法没有错误，统一规范团队协作中每位同事的代码编写风格，减少代码冗余，在保证代码语法正确的前提下提高代码的可读性
@@ -371,6 +371,11 @@ Github上常见的构建项目都是暴露出很多构建代码，构建代码�
 
 ### 📆日志
 
+**0.5.0**
+
+- [x] 升级`postcss`，更新其配置文件
+- [x] 移除`node-sass`，使用`sass/dark-sass`代替其功能，让`bruce-cli`下载更快运行更稳
+
 **0.4.0**
 
 - [x] 限制`bruce-cli`必须在`Node v12`以上使用
@@ -397,9 +402,9 @@ MIT © [Joway Young](https://github.com/JowayYoung)
 
 最初我的构思是写一份构建代码模板存放在Github上，然后通过脚本把构建代码拉下来。可是这样构建代码和业务代码还是同时存放在一个文件夹里，不容易管理，文件又多又杂。下次新开项目时又要把构建代码复制过去，有时升级构建功能，为了保持构建功能的统一，需要同时修改几个项目里的构建代码。既然这样，为什么不把那些通用的构建代码抽出来做成一个NPM模块呢，这样一次安装全局运行，多爽呀！
 
-2017年5月我就开始对这个项目进行升级改造，做成一个NPM模块，只不过一直在自己负责的项目上应用。因为还没怎样应用到其他的项目上，所以也不敢开源。经过差不多1年大大小小20多个项目的应用，终于稳定了这个项目的功能，所以我也决定对`bruce-cli`进行开源。对于所有通过`bruce-cli`创建的项目都可开箱即用所有的构建功能，如无特殊需求甚至是零配置即可运行项目。
+`2017年5月`我就开始对这个项目进行升级改造，做成一个NPM模块，只不过一直在自己负责的项目上应用。因为还没怎样应用到其他的项目上，所以也不敢开源。经过差不多1年大大小小20多个项目的应用，终于稳定了这个项目的功能，所以我也决定对`bruce-cli`进行开源。对于所有通过`bruce-cli`创建的项目都可开箱即用所有的构建功能，如无特殊需求甚至是零配置即可运行项目。
 
-开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node应用开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。截止2020年，已成功运用在自己所负责的项目达到40多个，再加上一些同行朋友和一些小公司也有使用本项目。
+开发这个项目经历了很多，挖的坑很多，填的坑也很多，很苦很累，有段时间还经常熬夜就是为了把它做得更好。不过收获也很大，学习了很多新知识新技能，把常用的Node知识都用上了，也为自己后期做Node应用开发打下了巩固的基础。有付出就有收获，我还是一直深信这句话，因为自己确实进步了很多。截止2020年，已成功运用在自己所负责的项目达到`50`多个，再加上一些同行朋友和一些小公司也有使用本项目。
 
 本项目是基于`Node12+`进行开发的，为了兼容`Node10+`，所以使用了`babel`对源码进行了编译，生成现在线上版本的代码，待更多的项目测试完成和应用起来后会开放源码供大家一起学习和完善。
 
