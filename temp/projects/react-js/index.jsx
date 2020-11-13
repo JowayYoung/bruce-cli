@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDom from "react-dom";
+import { render } from "react-dom";
 import { hot } from "react-hot-loader/root";
 
 import "./assets/css/reset.css";
@@ -22,4 +22,4 @@ function App() {
 console.log("项目构建环境：", process.env.NODE_ENV);
 console.log("项目运行环境：", RUN_ENV); // eslint-disable-line
 hot(App);
-ReactDom.render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById("root"));

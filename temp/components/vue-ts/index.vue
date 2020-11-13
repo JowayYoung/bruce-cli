@@ -19,5 +19,5 @@ export default class Demo extends Vue {
 		type: String
 	})
 	done!: string
-};
+}
 </script>

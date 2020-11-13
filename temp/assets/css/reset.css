@@ -150,7 +150,6 @@ button,
 input,
 select,
 textarea {
-	box-sizing: border-box;
 	outline: none;
 }
 a,

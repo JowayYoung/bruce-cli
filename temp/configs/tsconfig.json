@@ -6,7 +6,16 @@
 		"esModuleInterop": true,
 		"experimentalDecorators": true,
 		"jsx": "preserve",
-		"lib": ["dom", "es2015", "es2016", "es2017", "es2018", "esnext"],
+		"lib": [
+			"dom",
+			"es2015",
+			"es2016",
+			"es2017",
+			"es2018",
+			"es2019",
+			"es2020",
+			"esnext"
+		],
 		"module": "es6",
 		"moduleResolution": "node",
 		"removeComments": true,

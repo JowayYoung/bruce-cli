@@ -1,1 +1,1 @@
-const e=require("./zh-chs");module.exports=e;
+const e=require("./zh-cht");module.exports=e;
