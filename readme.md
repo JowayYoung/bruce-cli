@@ -1,7 +1,7 @@
 # Bruce Cli <img src="https://img.shields.io/badge/bruce--cli-React/Vue应用自动化构建脚手架-66f.svg">
 
 [![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/bruce-cli)
-[![version](https://img.shields.io/badge/version-0.6.2-f66.svg)](https://github.com/JowayYoung/bruce-cli)
+[![version](https://img.shields.io/badge/version-0.6.3-f66.svg)](https://github.com/JowayYoung/bruce-cli)
 [![node](https://img.shields.io/badge/node-%3E%3D%2012.0.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![npm](https://img.shields.io/badge/npm-%3E%3D%206.9.0-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/bruce-cli)
@@ -22,7 +22,7 @@
 > 本项目是一个基于`Webpack4.x.x`开发的极速零配置开箱即用的Web应用构建工具(**每次更新都会保持最新依赖**)，集成各种常用工具(`Handlebars、Postcss`、`Polyfill`、`Sass`、`Less`、`Babel`、`TypeScript`、`Stylelint`、`Eslint`、`Cssnano`、`Uglifyjs`、`Terser`和`Tinyimg`等)扩展构建功能，用于构建和管理**React/Vue**技术栈的项目应用
 
 [![commander](https://img.shields.io/badge/commander-6.x.x-f90.svg)](https://github.com/JowayYoung/bruce-cli)
-[![inquirer](https://img.shields.io/badge/inquirer-7.x.x-f90.svg)](https://github.com/JowayYoung/bruce-cli)
+[![inquirer](https://img.shields.io/badge/inquirer-8.x.x-f90.svg)](https://github.com/JowayYoung/bruce-cli)
 [![webpack](https://img.shields.io/badge/webpack-4.x.x-f66.svg)](https://github.com/JowayYoung/bruce-cli)
 [![handlebars](https://img.shields.io/badge/handlebars-4.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
 [![postcss](https://img.shields.io/badge/postcss-8.x.x-3c9.svg)](https://github.com/JowayYoung/bruce-cli)
