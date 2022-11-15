@@ -1,0 +1,1 @@
+import ee from"mini-css-extract-plugin";export default function q({useHash:e=!1}={}){return new ee({filename:`css/[name].bundle${e?".[contenthash:8]":""}.css`})}

@@ -1,0 +1,1 @@
+export default function f(){return{loader:"resolve-url-loader"}}

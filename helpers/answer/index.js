@@ -1,0 +1,1 @@
+import zo from"./build-answer.js";import nr from"./init-answer.js";import ar from"./locale-answer.js";import wr from"./new-answer.js";import br from"./remove-answer.js";export{zo as BuildAnswer,nr as InitAnswer,ar as LocaleAnswer,wr as NewAnswer,br as RemoveAnswer};

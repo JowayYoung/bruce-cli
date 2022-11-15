@@ -1,0 +1,1 @@
+import{CreateDir as Te}from"@yangzw/bruce-us/dist/node.js";import ke from"./temp-render.js";export default async function qe({frame:e="js",name:s="demo",style:m="scss",temp:t="component",useTs:r=!1}={}){Te(`src/${t}s`),ke({frame:e,name:s,style:m,temp:t,useTs:r})}

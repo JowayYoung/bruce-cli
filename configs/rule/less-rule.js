@@ -1,0 +1,1 @@
+import{CssLoader as a,CssUrlLoader as f,LessLoader as j,PostcssLoader as x,StyleLoader as b}from"../loader/index.js";export default function er({browsers:e=[],debug:r=!1}={}){return{exclude:/node_modules/,include:/src/,test:/\.less$/,use:[b(r),a(),x(e),f(),j()]}}

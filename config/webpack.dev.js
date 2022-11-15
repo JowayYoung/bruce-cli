@@ -1,1 +1,0 @@
-const{merge:e}=require("webpack-merge"),{GetDevEntry:t}=require("./entry"),{GetDevOptimize:r}=require("./optimze"),{GetDevOutput:o}=require("./output"),u=require("./webpack.base");module.exports=function(i){const{PORT:p}=i;return e(u(i),{devtool:"cheap-module-eval-source-map",entry:t(p),mode:"development",optimization:r(),output:o(p)})};

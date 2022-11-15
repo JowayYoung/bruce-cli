@@ -1,0 +1,1 @@
+export default function g(){return{loader:"vue-loader"}}

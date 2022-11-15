@@ -1,0 +1,1 @@
+import io from"inquirer";import{NAMEM as qt,TEMP as At}from"../question/index.js";const{prompt:ko}=io;export default async function wr(){const{temp:t}=await ko(At),{namem:m}=await ko(qt(t));return{namem:m,temp:t}}

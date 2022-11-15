@@ -1,0 +1,1 @@
+import rr from"@pmmmwh/react-refresh-webpack-plugin";export default function re(){return new rr}

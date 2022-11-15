@@ -1,0 +1,1 @@
+import{ACTION_TEXT as F,BUILD_TEXT as ro,CMD_TEXT as ho,INIT_TEXT as mo,LOCALE_TEXT as po,MAP_TEXT as so,NEW_TEXT as to,QA_CHECK_TEXT as co,QA_MSG_TEXT as eo,REMOVE_TEXT as fo}from"./zh-chs.js";export{F as ACTION_TEXT,ro as BUILD_TEXT,ho as CMD_TEXT,mo as INIT_TEXT,po as LOCALE_TEXT,so as MAP_TEXT,to as NEW_TEXT,co as QA_CHECK_TEXT,eo as QA_MSG_TEXT,fo as REMOVE_TEXT};

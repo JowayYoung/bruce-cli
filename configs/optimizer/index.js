@@ -1,0 +1,1 @@
+import I from"./dev-optimizer.js";import z from"./prod-optimizer.js";export{I as DevOptimizer,z as ProdOptimizer};

@@ -1,0 +1,1 @@
+import{HtmlLoader as h,MdLoader as v}from"../loader/index.js";export default function tr(){return{exclude:/node_modules/,include:/src/,test:/\.md$/,use:[h(),v()]}}

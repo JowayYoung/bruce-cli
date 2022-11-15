@@ -1,0 +1,1 @@
+import Z from"html-webpack-tags-plugin";import{IsPath as tt}from"../../constants/util/index.js";export default function st({scripts:t=[],styles:s=[]}={}){const e=t=>t.filter((t=>/^https?/.test(t)||tt(t))).map((t=>t.replace(/^dist\//g,"")));return new Z({append:!1,links:e(s),scripts:e(t),usePublicPath:!1})}

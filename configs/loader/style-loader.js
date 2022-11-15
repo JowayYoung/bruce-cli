@@ -1,0 +1,1 @@
+import q from"mini-css-extract-plugin";export default function b(r=!1){return r?{loader:"style-loader"}:{loader:q.loader}}

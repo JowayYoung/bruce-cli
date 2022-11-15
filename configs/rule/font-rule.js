@@ -1,0 +1,1 @@
+export default function te(){return{exclude:/node_modules/,generator:{filename:"font/[name].[contenthash:8][ext]"},include:/src/,test:/\.(ttf|otf|eot|woff2?)$/,type:"asset/resource"}}
