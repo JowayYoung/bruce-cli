@@ -36,6 +36,8 @@ declare module "*.vob";
 declare module "*.wmv";
 declare module "*.rmvb";
 
+declare module "*.pdf";
+
 declare module "*.vue";
 
 declare const RUN_ENV: "dev" | "test" | "pre" | "prod";

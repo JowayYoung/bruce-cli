@@ -1,1 +1,1 @@
-import{AbsPath as E}from"../../constants/util/index.js";export default function P(){return{filename:"js/[name].bundle.js",path:E("dist"),publicPath:"/"}}
+import{AbsPath as E}from"@yangzw/bruce-us/dist/node.js";export default function P(){return{filename:"js/[name].bundle.js",path:E("dist"),publicPath:"/"}}

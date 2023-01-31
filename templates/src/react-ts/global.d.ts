@@ -36,4 +36,6 @@ declare module "*.vob";
 declare module "*.wmv";
 declare module "*.rmvb";
 
+declare module "*.pdf";
+
 declare const RUN_ENV: "dev" | "test" | "pre" | "prod";

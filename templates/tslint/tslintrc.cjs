@@ -28,6 +28,8 @@ module.exports = {
 	rules: {
 		/* eslint-disable quote-props */
 		"@typescript-eslint/indent": ["error", "tab"], // ts
+		"@typescript-eslint/no-confusing-void-expression": ["off"], // ts
+		"@typescript-eslint/no-dynamic-delete": ["off"], // ts
 		"@typescript-eslint/no-inferrable-types": ["off"], // ts
 		"@typescript-eslint/no-misused-promises": ["off"], // ts
 		"@typescript-eslint/no-unused-vars": ["error"], // ts

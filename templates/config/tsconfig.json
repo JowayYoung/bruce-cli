@@ -3,8 +3,6 @@
 		"allowJs": true,
 		"allowSyntheticDefaultImports": true,
 		"baseUrl": ".",
-		"declaration": true,
-		"declarationDir": "dist",
 		"downlevelIteration": true,
 		"esModuleInterop": true,
 		"experimentalDecorators": true,
@@ -26,6 +24,7 @@
 		"module": "ES6",
 		"moduleResolution": "node",
 		"removeComments": true,
+		"resolveJsonModule": true,
 		"paths": {
 			"#/*": ["*"],
 			"@/*": ["src/*"]
