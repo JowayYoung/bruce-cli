@@ -1,1 +1,0 @@
-export default function j(){return{loader:"less-loader"}}

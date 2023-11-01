@@ -1,1 +1,0 @@
-import qo from"inquirer";import{NAMEM as nt,TEMP as ut}from"../question/index.js";const{prompt:Lo}=qo;export default async function wr(){const{temp:t}=await Lo(ut),{namem:m}=await Lo(nt(t));return{namem:m,temp:t}}

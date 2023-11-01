@@ -1,0 +1,33 @@
+/** 主色 **/
+$primary: #f66;
+$primary-muted: #66f;
+$secondary: #f90;
+$secondary-muted: #09f;
+$tertiary: #9c3;
+$tertiary-muted: #3c9;
+/** 块级色域 **/
+$block-primary: #fff;
+$block-secondary: #ddd;
+$block-tertiary: #666;
+/** 文本色域 **/
+$text-primary: #fff;
+$text-secondary: #666;
+$text-tertiary: #333;
+/** 模态色域 **/
+$modal-primary: rgba(#000, .5);
+$modal-secondary: rgba(#000, .7);
+/** 状态色域 **/
+$message: $secondary-muted;
+$success: $tertiary-muted;
+$failure: $primary;
+$warning: $secondary;
+/** 组件共态 **/
+$box-shadow: 0 0 15px rgba(#000, .5);
+$button-cancel-text: #adb0c0;
+$button-cancel: #f0f0f0;
+$button-text: #9d591a;
+$button: #ffd38e;
+$desc: #63636d;
+$icon: #616166;
+$link: #808fa2;
+$title: #333440;

@@ -1,1 +1,0 @@
-export default function h(){return{loader:"html-loader"}}

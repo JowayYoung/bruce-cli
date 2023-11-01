@@ -1,1 +1,0 @@
-import{AbsPath as E}from"@yangzw/bruce-us/dist/node.js";import Y from"dayjs";export default function A({mode:e="prod",publicPath:t="",useHash:s=!1,useTimer:a=!1}={}){return{filename:`js/[name].bundle${s?".[contenthash:8]":""}.js`,path:E(`dist/${e}${a?Y().format("-YYYYMMDD-HHmmss"):""}`),publicPath:t}}

@@ -1,0 +1,265 @@
+/* 初始化 */
+a,
+abbr,
+address,
+area,
+article,
+aside,
+audio,
+b,
+base,
+bdi,
+bdo,
+blockquote,
+body,
+br,
+button,
+canvas,
+caption,
+cite,
+code,
+col,
+colgroup,
+data,
+datalist,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+head,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+link,
+main,
+map,
+mark,
+menu,
+menuitem,
+meta,
+meter,
+nav,
+noscript,
+object,
+ol,
+optgroup,
+option,
+output,
+p,
+param,
+picture,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+script,
+section,
+select,
+small,
+source,
+span,
+strong,
+style,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+template,
+textarea,
+tfoot,
+th,
+thead,
+time,
+title,
+tr,
+track,
+u,
+ul,
+var,
+video,
+wbr,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 14px/1 "PingFang SC", "Microsoft YaHei", sans-serif;
+	-webkit-overflow-scrolling: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+img {
+	display: block;
+	border: none;
+}
+dl,
+li,
+menu,
+ol,
+ul {
+	list-style: none;
+}
+button,
+input,
+select,
+textarea {
+	outline: none;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+/* 浮动方式 */
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clear {
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+.clearfix::after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	font-size: 0;
+	content: "";
+}
+/* 定位方式 */
+.pr {
+	position: relative;
+}
+.pa {
+	position: absolute;
+}
+.pf {
+	position: fixed;
+}
+.center {
+	margin: 0 auto;
+}
+/* 对齐方式 */
+.tal {
+	text-align: left;
+}
+.tac {
+	text-align: center;
+}
+.tar {
+	text-align: right;
+}
+.taj {
+	text-align: justify;
+}
+/* 居中定位 */
+.abs-ct {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.abs-cx {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.abs-cy {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/* 弹性布局 */
+.flex-ct-x {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-ct-y {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.flex-fs {
+	display: flex;
+	flex-wrap: wrap;
+	place-content: space-between space-between;
+}
+/* 动画模式 */
+.td-camera {
+	perspective: 1000;
+}
+.td-space {
+	transform-style: preserve-3d;
+}
+.td-box {
+	backface-visibility: hidden;
+}
+.gpu-speed {
+	transform: translate3d(0, 0, 0);
+}
+/* 其它 */
+.fullscreen {
+	inset: 0;
+}
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.page-at {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+.page-fs {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.round {
+	border-radius: 100%;
+}

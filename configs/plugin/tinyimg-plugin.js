@@ -1,1 +1,0 @@
-import ne from"tinyimg-webpack-plugin";export default function mr({disabled:e=!0}={}){return e?null:new ne({logged:!0})}

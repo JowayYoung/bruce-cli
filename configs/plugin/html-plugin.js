@@ -1,1 +1,0 @@
-import{AbsPath as E}from"@yangzw/bruce-us/dist/node.js";import U from"html-webpack-plugin";export default function X(){return new U({chunks:["manifest","vendor","index"],chunksSortMode:"manual",favicon:E("src/assets/img/favicon.ico"),filename:"index.html",inject:"body",template:E("src/index.html")})}

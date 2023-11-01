@@ -1,1 +1,0 @@
-import O from"postcss-import";import k from"postcss-preset-env";import{BROWSERS_ES5 as n}from"../../constants/util/index.js";export default function x(s=[]){const o=s.length?s:n;return{loader:"postcss-loader",options:{postcssOptions:{plugins:[O(),k({browsers:o})]}}}}

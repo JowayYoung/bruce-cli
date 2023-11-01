@@ -1,1 +1,0 @@
-export default function a(){return{loader:"css-loader",options:{importLoaders:2}}}

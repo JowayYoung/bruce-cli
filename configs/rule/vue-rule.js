@@ -1,1 +1,0 @@
-import{VueLoader as g}from"../loader/index.js";export default function ur(){return{exclude:/node_modules/,include:/src/,test:/\.vue$/,use:[g()]}}

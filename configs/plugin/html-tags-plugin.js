@@ -1,1 +1,0 @@
-import{CheckPath as Z}from"@yangzw/bruce-us/dist/node.js";import tt from"html-webpack-tags-plugin";export default function st({scripts:t=[],styles:s=[]}={}){const e=t=>t.filter((t=>/^https?/.test(t)||Z(t))).map((t=>t.replace(/^dist\//g,"")));return new tt({append:!1,links:e(s),scripts:e(t),usePublicPath:!1})}

@@ -1,1 +1,0 @@
-import c from"./brucerc-config.js";export{c as BrucercConfig};

@@ -1,1 +1,0 @@
-export default function v(){return{loader:"markdown-loader"}}

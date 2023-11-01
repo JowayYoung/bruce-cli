@@ -1,0 +1,1 @@
+import is from"./app-render.js";import rr from"./mate-render.js";export{is as AppRender,rr as MateRender};

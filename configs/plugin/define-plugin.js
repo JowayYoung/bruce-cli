@@ -1,1 +1,0 @@
-import N from"webpack";export default function V({mode:_="prod"}={}){return new N.DefinePlugin({__VUE_OPTIONS_API__:!1,__VUE_PROD_DEVTOOLS__:!1,RUN_ENV:JSON.stringify(_)})}

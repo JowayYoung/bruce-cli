@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"downlevelIteration": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"jsx": "preserve",
+		"lib": [
+			"DOM",
+			"DOM.Iterable",
+			"ES2015",
+			"ES2016",
+			"ES2017",
+			"ES2018",
+			"ES2019",
+			"ES2020",
+			"ES2021",
+			"ES2022",
+			"ESNext"
+		],
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"outDir": "dist",
+		"removeComments": true,
+		"resolveJsonModule": true,
+		"sourceMap": false,
+		"strict": true,
+		"target": "ES6"
+	},
+	"exclude": [
+		"node_modules",
+		"src/assets"
+	],
+	"include": [
+		"src"
+	]
+}

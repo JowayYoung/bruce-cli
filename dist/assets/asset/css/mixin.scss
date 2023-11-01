@@ -1,0 +1,24 @@
+$breakpoints: (
+	desktop: "only screen and (width >= 1000px) and (height >= 800px)",
+) !default;
+@mixin auto-response($breakpoint) {
+	$query: map-get($breakpoints, $breakpoint);
+	@if not $query {
+		@error "找不到`#{$breakpoint}`的值，请确保在`$breakpoints`映射中已经定义它";
+	}
+	$condition: if(type-of($query) == "string", unquote($query), inspect($query));
+	@media #{$condition} {
+		@content;
+	}
+}
+@mixin ellipsis-line($line: 2) {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: $line;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+}
+@mixin square($size: 100px) {
+	width: $size;
+	height: $size;
+}

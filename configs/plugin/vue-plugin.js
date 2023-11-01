@@ -1,1 +1,0 @@
-import{VueLoaderPlugin as oe}from"vue-loader";export default function or(){return new oe}

@@ -1,1 +1,0 @@
-import d from"./dev-entry.js";import m from"./prod-entry.js";export{d as DevEntry,m as ProdEntry};

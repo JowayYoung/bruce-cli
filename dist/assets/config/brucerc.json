@@ -1,0 +1,19 @@
+{
+	"alias": {},
+	"browsers": [],
+	"copyFiles": [],
+	"eslintIgnores": [],
+	"eslintRules": {},
+	"frame": "js",
+	"linkAssets": [],
+	"openPages": [],
+	"proxy": {},
+	"proxyHost": "",
+	"publicPath": "",
+	"scriptAssets": [],
+	"style": "scss",
+	"stylelintIgnores": [],
+	"stylelintRules": {},
+	"transpileDeps": [],
+	"useTs": false
+}

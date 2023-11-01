@@ -1,0 +1,1 @@
+import jt from"./build-answer.js";import At from"./create-answer.js";import Et from"./dev-answer.js";import or from"./init-answer.js";import er from"./locale-answer.js";import mr from"./remove-answer.js";export{jt as BuildAnswer,At as CreateAnswer,Et as DevAnswer,or as InitAnswer,er as LocaleAnswer,mr as RemoveAnswer};
