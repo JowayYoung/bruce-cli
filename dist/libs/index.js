@@ -1,1 +1,1 @@
-import d from"./build.js";import c from"./create.js";import u from"./dev.js";import v from"./init.js";import O from"./locale.js";import f from"./remove.js";export{d as Build,c as Create,u as Dev,v as Init,O as Locale,f as Remove};
+import c from"./build.js";import u from"./create.js";import v from"./dev.js";import O from"./init.js";import T from"./locale.js";import f from"./remove.js";export{c as Build,u as Create,v as Dev,O as Init,T as Locale,f as Remove};
