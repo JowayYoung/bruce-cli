@@ -7,8 +7,8 @@ export default function About() {
 	const onToggle = () => setTab(state => state === 0 ? 1 : 0);
 	return (
 		<div className="about-view">
-			{tab === 0 && <img className="about-qrcode" src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/03bcc13d83524f9eb8a61a1cab0543af~tplv-k3u1fbpfcp-watermark.image" />}
-			{tab === 1 && <img className="about-qrcode" src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f9a7e606f0ca4cf58c2262f6c16e3464~tplv-k3u1fbpfcp-watermark.image" />}
+			{tab === 0 && <img className="about-qrcode" src="https://jowayyoung.github.io/static/bruce/qrcode-me.jpg" />}
+			{tab === 1 && <img className="about-qrcode" src="https://jowayyoung.github.io/static/bruce/qrcode-us.jpg" />}
 			<button className="about-btn center" onClick={onToggle}>查看{tab === 0 ? "公众号" : "微信"}</button>
 		</div>
 	);

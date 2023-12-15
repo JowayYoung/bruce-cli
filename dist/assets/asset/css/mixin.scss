@@ -1,5 +1,5 @@
 $breakpoints: (
-	desktop: "only screen and (width >= 1000px) and (height >= 800px)",
+	desktop: "only screen and (width >= 1000px) and (height >= 800px)"
 ) !default;
 @mixin auto-response($breakpoint) {
 	$query: map-get($breakpoints, $breakpoint);

@@ -14,15 +14,15 @@ $text-primary: #fff;
 $text-secondary: #666;
 $text-tertiary: #333;
 /** 模态色域 **/
-$modal-primary: rgba(#000, .5);
-$modal-secondary: rgba(#000, .7);
+$modal-primary: rgba(#000, 0.5);
+$modal-secondary: rgba(#000, 0.7);
 /** 状态色域 **/
 $message: $secondary-muted;
 $success: $tertiary-muted;
 $failure: $primary;
 $warning: $secondary;
 /** 组件共态 **/
-$box-shadow: 0 0 15px rgba(#000, .5);
+$box-shadow: 0 0 15px rgba(#000, 0.5);
 $button-cancel-text: #adb0c0;
 $button-cancel: #f0f0f0;
 $button-text: #9d591a;

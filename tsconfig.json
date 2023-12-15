@@ -19,6 +19,7 @@
 			"ES2020",
 			"ES2021",
 			"ES2022",
+			"ES2023",
 			"ESNext"
 		],
 		"module": "ESNext",
@@ -26,6 +27,7 @@
 		"outDir": "dist",
 		"removeComments": true,
 		"resolveJsonModule": true,
+		"skipLibCheck": true,
 		"sourceMap": false,
 		"strict": true,
 		"target": "ES6"
