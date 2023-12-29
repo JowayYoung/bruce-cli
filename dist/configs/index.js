@@ -1,1 +1,1 @@
-import B from"./create-vite.js";import le from"./create-webpack.js";import W from"./parse-config.js";export{B as CreateVite,le as CreateWebpack,W as ParseConfig};
+import W from"./create-vite.js";import le from"./create-webpack.js";import V from"./parse-config.js";export{W as CreateVite,le as CreateWebpack,V as ParseConfig};
