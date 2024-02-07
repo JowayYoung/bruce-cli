@@ -140,6 +140,7 @@ button,
 input,
 select,
 textarea {
+	display: block;
 	outline: none;
 }
 a,
