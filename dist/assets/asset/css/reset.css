@@ -121,9 +121,10 @@ body {
 	line-height: 1;
 	font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
 	font-size: 14px;
-	-webkit-overflow-scrolling: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: transparent;
 }
 img {
 	display: block;

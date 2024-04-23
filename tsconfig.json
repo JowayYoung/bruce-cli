@@ -25,11 +25,6 @@
 		"module": "ESNext",
 		"moduleResolution": "Node",
 		"outDir": "dist",
-		"paths": {
-			"@/*": [
-				"src/*"
-			]
-		},
 		"removeComments": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
