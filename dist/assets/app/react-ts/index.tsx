@@ -25,11 +25,16 @@ function App(): JSX.Element {
 					<NavLink className={({ isActive }: ParamsType): string => `nav-item${isActive ? " active" : ""}`} to="/about">About</NavLink>
 				</nav>
 				<Routes>
-					<Route path="" element={<Home />} />
-					<Route path="about" element={<About />} />
+					<Route element={<Home />} path="" />
+					<Route element={<About />} path="about" />
 				</Routes>
 			</BrowserRouter>
-			<a className="copyright abs-cx" href="https://yangzw.vip" target="_blank" rel="noreferrer">Produced by @JowayYoung</a>
+			<a
+				className="copyright abs-cx"
+				href="https://yangzw.vip"
+				rel="noreferrer"
+				target="_blank"
+			>Produced by @JowayYoung</a>
 		</div>
 	);
 }
