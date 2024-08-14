@@ -1,6 +1,6 @@
 {
 	"name": "bruce-cli",
-	"version": "1.3.4",
+	"version": "1.3.5",
 	"description": "A JS/React App automation build scaffolding with zero-configuration and out-of-the-box",
 	"keywords": [
 		"bruce-app",
